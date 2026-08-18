@@ -75,10 +75,27 @@ def main():
     SHOT_DIR.mkdir(parents=True, exist_ok=True)
 
     sites = pd.read_csv(DOMAIN_LIST)
+
+    # Reanudable: si ya existe un log de una corrida anterior, no se
+    # repiten los ids ya procesados (ok, error o excluido_robots).
+    log_existed = LOG_PATH.exists()
+    n_already_done = 0
+    if log_existed:
+        prev = pd.read_csv(LOG_PATH)
+        n_already_done = len(prev)
+        sites = sites[~sites["id"].isin(set(prev["id"]))]
+        print(f"Reanudando: {n_already_done} sitios ya procesados, {len(sites)} pendientes.")
+
     if args.limit:
         sites = sites.head(args.limit)
 
-    log_rows = []
+    log_file = open(LOG_PATH, "a" if log_existed else "w", newline="", encoding="utf-8")
+    log_writer = csv.writer(log_file)
+    if not log_existed:
+        log_writer.writerow(["id", "url", "status", "detail"])
+
+    n_new_ok = 0
+    n_new_total = 0
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -92,7 +109,9 @@ def main():
 
             if not robots_allows(url):
                 status = "excluido_robots"
-                log_rows.append([site_id, url, status, detail])
+                log_writer.writerow([site_id, url, status, detail])
+                log_file.flush()
+                n_new_total += 1
                 print(f"[{site_id}] excluido por robots.txt: {url}")
                 continue
 
@@ -119,18 +138,17 @@ def main():
             finally:
                 page.close()
 
-            log_rows.append([site_id, url, status, detail])
+            log_writer.writerow([site_id, url, status, detail])
+            log_file.flush()
+            n_new_total += 1
+            if status == "ok":
+                n_new_ok += 1
             time.sleep(REQUEST_DELAY_SECONDS)
 
         browser.close()
 
-    with open(LOG_PATH, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["id", "url", "status", "detail"])
-        writer.writerows(log_rows)
-
-    n_ok = sum(1 for r in log_rows if r[2] == "ok")
-    print(f"\nCompletado: {n_ok}/{len(log_rows)} sitios descargados. Log en {LOG_PATH}")
+    log_file.close()
+    print(f"\nCompletado esta corrida: {n_new_ok}/{n_new_total} nuevos sitios descargados. Log en {LOG_PATH}")
 
 
 if __name__ == "__main__":
