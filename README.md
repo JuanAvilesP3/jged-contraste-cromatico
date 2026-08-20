@@ -9,7 +9,7 @@
 - [x] Experimento ejecutado (día 1) — 41,360 pares de color, clasificación WCAG
 - [x] Estadística (día 1) — χ², regresión logística, agrupamiento CIELAB
 - [x] Figuras generadas (4/4)
-- [ ] Redacción del manuscrito (día 2)
+- [x] Redacción del manuscrito (día 2) — `paper/main.tex` completo, 3 citas reales verificadas de JGED en `refs.bib`
 - [ ] Endurecimiento: DOIs verificados
 - [ ] Endurecimiento: revisión adversarial ronda 1
 - [ ] Endurecimiento: revisión adversarial ronda 2
@@ -86,3 +86,9 @@ Chi-cuadrado de independencia con corrección de continuidad; regresión logíst
 - Bloqueado en: nada. **P2 completo hasta figuras — con esto los 5 artículos de línea A quedan parejos.**
 - Siguiente: redactar `paper/main.tex`.
 - Tiempo de computo consumido: ~1h
+
+## 20/08 - Redacción del manuscrito
+- Hecho: `paper/main.tex` completo (abstract, introducción, related work, metodología, resultados, discusión, limitaciones, conclusión). 3 citas reales de JGED buscadas y verificadas por URL directa (no inventadas) en `refs.bib`: Weingerl et al. 2022, Punsongserm & Suvakunta 2025, Ofosu-Asare 2024. Todos los números del manuscrito provienen directamente de los archivos de `results/tables/` (no estimados de memoria).
+- Bloqueado en: nada. Falta Fase 2 completa (verificación formal de DOIs, revisión adversarial en 2 rondas, pasada anti-IA).
+- Siguiente: pasar al manuscrito del siguiente artículo, o iniciar Fase 2 sobre los ya redactados.
+- Tiempo de computo consumido: ~30 min
