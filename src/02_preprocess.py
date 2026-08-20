@@ -23,6 +23,7 @@ directamente sin dependencias extra.
 
 import csv
 import json
+import threading
 import time
 from pathlib import Path
 
@@ -171,6 +172,20 @@ def main():
             page = context.new_page()
             page.set_default_timeout(PAGE_TIMEOUT_MS)
             page.on("dialog", lambda d: d.dismiss())
+
+            # Vigilante de tiempo: page.evaluate() (usado para extraer los
+            # pares de color y para axe.run()) NO respeta
+            # set_default_timeout ni acepta un parametro de timeout propio
+            # en la API sincrona -- un sitio pesado puede colgar la llamada
+            # indefinidamente (se confirmo: 30+ min sin avanzar). Si el
+            # sitio no termina en SITE_TIMEOUT segundos, se fuerza el
+            # cierre de la pagina desde otro hilo, lo que hace que
+            # cualquier llamada bloqueada lance una excepcion y el flujo
+            # principal pueda seguir con el siguiente sitio.
+            SITE_TIMEOUT = 30
+            watchdog = threading.Timer(SITE_TIMEOUT, lambda pg=page: pg.close())
+            watchdog.daemon = True
+            watchdog.start()
             try:
                 page.goto(row.web_page, timeout=PAGE_TIMEOUT_MS, wait_until="domcontentloaded")
                 page.wait_for_timeout(2000)
@@ -218,7 +233,11 @@ def main():
             except Exception as exc:
                 print(f"[{i+1}/{len(sites)}] {row.id} error: {str(exc)[:150]}")
             finally:
-                page.close()
+                watchdog.cancel()
+                try:
+                    page.close()
+                except Exception:
+                    pass  # el vigilante ya pudo haberla cerrado
             time.sleep(REQUEST_DELAY_SECONDS)
 
         browser.close()
