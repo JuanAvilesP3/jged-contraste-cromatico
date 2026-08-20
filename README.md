@@ -6,8 +6,10 @@
 ## Estado
 - [x] Ficha de revista completa (JOURNAL.md)
 - [x] Datos descargados (data/raw/) — 278 sitios de 464 intentados (17 países LatAm)
-- [ ] Experimento ejecutado (día 1) — falta 03_experiment.py: análisis de contraste WCAG, estadística
-- [ ] Redacción y figuras (día 2)
+- [x] Experimento ejecutado (día 1) — 41,360 pares de color, clasificación WCAG
+- [x] Estadística (día 1) — χ², regresión logística, agrupamiento CIELAB
+- [x] Figuras generadas (4/4)
+- [ ] Redacción del manuscrito (día 2)
 - [ ] Endurecimiento: DOIs verificados
 - [ ] Endurecimiento: revisión adversarial ronda 1
 - [ ] Endurecimiento: revisión adversarial ronda 2
@@ -72,4 +74,15 @@ Chi-cuadrado de independencia con corrección de continuidad; regresión logíst
 - Hecho: `00_build_domain_list.py` (245 dominios iniciales, dataset abierto Hipo/university-domains-list, 17 países LatAm) + `00b_backfill_domain_list.py` (219 dominios de relleno) + `01_download.py` con Playwright. Bugs reales corregidos: (1) robots.txt se pedía con el user-agent genérico de Python, que varios sitios bloqueaban con 403 → exclusión de sitios que sí permitían rastreo; (2) un sitio con diálogo JS sin manejador colgó el script 4 horas reales → reescrito con vigilante de tiempo por sitio. Resultado: **278 sitios descargados de 464 intentados** (60% éxito; el resto son sitios caídos, con DNS roto, o excluidos por robots.txt — documentado en `data/raw/download_log.csv` para la sección de limitaciones).
 - Bloqueado en: nada.
 - Siguiente: `02_preprocess.py` (extracción de pares de color, conversión CIELAB) y `03_experiment.py` (cálculo de ratio de contraste WCAG, χ², regresión logística).
+- Tiempo de computo consumido: ~1h
+
+## 20/08 - Día 1 completo: extracción, clasificación WCAG y estadística
+- Hecho:
+  - `02_preprocess.py`: revisita en vivo los 278 sitios (el HTML guardado no sirve para esto — no incluye el CSS externo, así que `getComputedStyle()` daría valores por defecto del navegador). Extrae pares de color efectivo texto/fondo, convierte a CIELAB, corre axe-core como validación cruzada. Bug real: `page.evaluate()` no tiene timeout propio en la API síncrona de Playwright y se colgó 30+ minutos sin avanzar — se agregó un vigilante por hilo que fuerza el cierre de la página si un sitio no responde en 30s. Resultado: 41,360 pares de color de 259 sitios.
+  - `03_experiment.py`: clasificación falla/AA/AAA según tamaño de texto. 21.6% de los pares fallan AA; 93.5% de los sitios tienen al menos un fallo crítico; correlación moderada (0.35) con las violaciones detectadas por axe-core.
+  - `04_stats.py`: χ² cumplimiento×país muy significativo (p<0.001, V de Cramér=0.20); regresión logística con la mayoría de países significativos; agrupamiento CIELAB (k=6, silhouette=0.854) de los pares fallidos — **el patrón de colores que fallan es más diverso de lo hipotetizado** (no solo "gris sobre blanco"; hay clústers rojo, amarillo, verde, morado y azul-verdoso).
+  - `05_figures.py`: 4 figuras generadas y revisadas. Fig. 4 usa capturas reales de los sitios con peor tasa de fallo — **pendiente de revisión de anonimización en Fase 2**, no se hizo ningún tratamiento todavía.
+  - Nota metodológica documentada: "tipo de institución" (variable que pedía la ficha para el χ²) no estaba disponible de forma confiable en el dataset de universidades; se usó "país" como la variable categórica disponible más cercana.
+- Bloqueado en: nada. **P2 completo hasta figuras — con esto los 5 artículos de línea A quedan parejos.**
+- Siguiente: redactar `paper/main.tex`.
 - Tiempo de computo consumido: ~1h
