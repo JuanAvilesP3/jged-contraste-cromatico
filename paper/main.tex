@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 
-\title{Chromatic Accessibility in University Websites}
+\title{Chromatic Accessibility in Latin American University Websites: A Census of WCAG Contrast Compliance}
 \author{}
 \date{}
 
@@ -12,23 +12,82 @@
 \maketitle
 
 \begin{abstract}
+Web accessibility audits at scale have historically concentrated on North American and European institutions, leaving Latin American higher education largely unexamined. We crawled the homepages of 464 Latin American university websites across 17 countries and successfully extracted computed text/background color pairs from 259 of them (41,360 pairs in total). Each pair was converted from sRGB to CIELAB and evaluated against the WCAG 2.2 contrast thresholds, with the axe-core accessibility engine used as an independent cross-check. We find that 21.6\% of all color pairs fail the AA threshold, and 93.5\% of sites contain at least one critical failure. Compliance differs significantly by country ($\chi^2=1625.04$, $df=16$, $p<0.001$, Cram\'{e}r's $V=0.198$), and a logistic regression confirms country- and typography-level effects on failure probability. Contrary to our initial hypothesis that failures would cluster around a narrow ``light gray on white'' pattern, unsupervised clustering of the failing pairs in the CIELAB $a^*b^*$ plane reveals six well-separated color families (silhouette $=0.854$), indicating that chromatic accessibility failures in this region are driven by a broader range of design choices than previously assumed.
 \end{abstract}
 
 \section{Introduction}
 
+Web accessibility is frequently framed as a compliance checkbox rather than as a problem of information design: which visual choices allow a message to be perceived by the range of readers who will actually encounter it. Color contrast between text and its background is one of the most consequential of those choices, because unlike many other accessibility barriers it is silent -- a page can look complete to a sighted designer working under ideal lighting on a calibrated monitor while remaining functionally illegible to a large fraction of visitors.
+
+Large-scale, empirical audits of contrast compliance exist, but they concentrate almost exclusively on North American and European institutional or commercial websites. Latin American higher education -- more than 460 institutions across 19 countries -- has not, to our knowledge, been the subject of a comparable regional census. This is a meaningful gap: university websites are a primary public-facing channel for admissions, financial aid, and academic information, and design conventions, content management systems, and institutional resourcing in the region differ enough from those studied elsewhere that findings cannot simply be assumed to transfer.
+
+This paper reports a census of chromatic accessibility on the homepages of Latin American universities. Rather than relying on a small hand-picked sample, we build a stratified list of institutions from an open, community-maintained directory, crawl each homepage with a real browser engine to capture computed (post-CSS) color pairs, and classify every pair against the WCAG 2.2 contrast thresholds. We ask two questions. First, at what rate do these institutions fail contrast requirements, and does that rate vary systematically by country? Second, what visual pattern -- if any -- characterizes the colors involved in a failure? The second question matters because the answer determines what kind of intervention would actually help: a narrow pattern (e.g., light gray body text) suggests a simple style-guide fix, while a diffuse one suggests a more structural design-literacy problem.
+
 \section{Related Work}
+
+Contrast and legibility research inside the graphic design literature has largely focused on typography and reading performance rather than on regulatory thresholds. Weingerl et al.~\citep{weingerl2022visibility} studied the visibility and legibility of short words under controlled experimental conditions, establishing that legibility judgments depend jointly on typographic and perceptual factors rather than on any single variable in isolation -- a finding that motivates our decision to treat contrast as one factor among several (font size, weight) rather than in isolation. Punsongserm and Suvakunta~\citep{punsongserm2025thai} conducted a technical review of typeface choice, type size, and color contrast in government mobile applications, and, closer to our own setting, found systematic WCAG non-compliance in public-sector digital products -- a pattern we replicate, in a different modality and region, for public university websites. Ofosu-Asare~\citep{ofosuasare2024enhancing} examined usability and design evaluation techniques for online learning environments, underscoring that accessibility in educational digital products is usually assessed qualitatively or on small samples rather than through large-scale automated census, which is the gap this paper addresses directly for the chromatic dimension.
 
 \section{Methodology}
 
+\subsection{Site selection}
+We built the candidate list from the \emph{Hipo/university-domains-list} open dataset, filtered to the 19 countries of Latin America, and drew a stratified random sample across countries (capped per country to avoid Brazil and Mexico dominating the list). The final list contained 464 domains across 17 countries; the source dataset contained no entries for Bolivia or Venezuela, which are consequently absent from this study (see Limitations).
+
+\subsection{Crawling}
+Each homepage was visited with a headless Chromium browser (Playwright), identifying our crawler with a descriptive user agent and honoring \texttt{robots.txt} (fetched with the same identifying user agent, since fetching it with a generic client triggers 403 responses on several sites and would otherwise cause valid, crawlable sites to be excluded by mistake). Requests were rate-limited to one every two seconds. Of the 464 domains, 278 (59.9\%) were successfully rendered; the remainder were unreachable, timed out, or were excluded by \texttt{robots.txt} (see Table~\ref{tab:crawl-outcomes}).
+
+\subsection{Color pair extraction}
+For each of the 278 reachable sites we revisited the live page a second time and, via \texttt{getComputedStyle()}, extracted every visible text node's computed text color together with its \emph{effective} background color -- resolved by walking up the DOM ancestor chain until a non-transparent background is found, since a text element's immediate parent is frequently transparent. Elements with zero width/height, \texttt{display:none}, \texttt{visibility:hidden}, or zero opacity were discarded. This step requires a live browser rather than the raw HTML saved during crawling, because a serialized DOM does not inline externally linked CSS; computing style from the saved markup alone would silently fall back to browser defaults. This yielded 41,360 color pairs from 259 sites (19 sites returned no usable pairs, typically due to navigation during evaluation).
+
+\subsection{Contrast calculation and cross-validation}
+Each pair's WCAG relative luminance and contrast ratio were computed directly from sRGB, and each pair was independently converted from sRGB to CIELAB ($D_{65}$ illuminant) for the clustering analysis. As a cross-check, we additionally ran the \texttt{axe-core} accessibility engine (the library underlying most commercial accessibility linters) against the same live page and recorded its color-contrast violation and pass counts.
+
+\subsection{Classification and aggregation}
+Following WCAG 2.2, each pair was classified as \emph{fail}, \emph{AA}, or \emph{AAA} using thresholds that depend on text size: 3:1 (AA) / 4.5:1 (AAA) for large text ($\geq$24px, or $\geq$18.66px bold), and 4.5:1 (AA) / 7:1 (AAA) otherwise. Results were aggregated per site (median ratio, \% of pairs failing AA, whether the site has at least one critical failure).
+
+\subsection{Statistical analysis}
+We tested independence between country and AA compliance with a $\chi^2$ test (continuity-corrected, restricted to countries with $\geq$30 pairs) and report Cram\'{e}r's $V$ as effect size. We fit a logistic regression of pair-level failure on country, font size, and whether the text qualifies as ``large,'' and we clustered the failing pairs' text-color coordinates in the CIELAB $a^*b^*$ plane with $k$-means, selecting $k$ by silhouette score over $k \in \{2,\dots,6\}$.
+
 \section{Results}
+
+\begin{table}[h]
+\centering
+\caption{Crawl outcomes for the 464 sampled domains.}
+\label{tab:crawl-outcomes}
+\begin{tabular}{lr}
+\toprule
+Outcome & Count \\
+\midrule
+Successfully rendered & 278 \\
+Unreachable / timed out / other error & 167 \\
+Excluded by \texttt{robots.txt} & 19 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Across the 41,360 extracted color pairs, 21.6\% fail the applicable WCAG AA threshold, 16.6\% meet AA but not AAA, and 61.8\% meet AAA. At the site level, 93.5\% of the 259 successfully analyzed homepages contain at least one critical (failing) pair, and the median site has 19.9\% of its pairs failing AA -- so failures are not concentrated in a handful of outlier institutions; they are the norm.
+
+Compliance varies significantly by country ($\chi^2 = 1625.04$, $df = 16$, $p < 0.001$), though the effect size is modest (Cram\'{e}r's $V = 0.198$), indicating country explains some but far from all of the variance. The logistic regression on pair-level failure confirms this: most country coefficients are statistically significant (e.g., Paraguay: $\beta = -2.23$, $p<0.001$; Cuba: $\beta = +0.57$, $p<0.001$), and typography matters too -- pairs classified as ``large text'' have significantly lower odds of failure ($\beta = -0.10$, $p = 0.022$), consistent with WCAG's own more lenient threshold for large text, while raw font size in pixels shows a small but significant \emph{positive} association with failure ($\beta = +0.0108$, $p<0.001$) once the large-text category is already accounted for.
+
+The $k$-means clustering of the 8,925 failing pairs' text-color coordinates in CIELAB $a^*b^*$ space selected $k=6$ as the best-supported solution (silhouette $=0.854$, versus $0.804$ at $k=2$), producing six well-separated color families rather than a single dominant ``gray text'' cluster: a near-neutral low-chroma cluster, and five clearly chromatic clusters spanning red, yellow, green, purple, and blue-purple regions of the plane (Figure~3). Agreement between our contrast-ratio-based failure count and \texttt{axe-core}'s independent color-contrast violation count is positive but moderate ($r = 0.347$ across sites), which is expected given the two tools differ in which elements they consider evaluable (axe-core additionally skips certain non-text and gradient cases that our extraction still captures).
 
 \section{Discussion}
 
+The headline finding is not merely that most Latin American university homepages fail WCAG contrast requirements -- that mirrors findings from other regions -- but that the \emph{failures do not have a single dominant visual signature}. Our working hypothesis, drawn from general web-accessibility folklore, was that failures would concentrate in three familiar patterns: light gray text on white, text over unmasked photographic backgrounds, and unverified interaction states (hover/focus/visited). The clustering result complicates that story: while a large near-neutral cluster consistent with the ``light gray on white'' pattern is present, it accounts for only one of six roughly comparable clusters. Chromatic failures -- saturated brand colors used directly as text color against a similarly saturated or photographic background -- appear to be at least as common as low-chroma ones.
+
+This has a practical implication for the institutions themselves: a style guide that only warns designers away from light gray text will miss the majority of the actual failure modes observed here. The more plausible explanation is that these failures follow from institutional brand palettes (a university's primary color used directly as a text color, regardless of what it sits on) rather than from a single stylistic trend, which would explain both the diversity of clusters and the country-level variation -- different national/institutional design conventions produce different brand palettes, and therefore different failure signatures.
+
+A note on the WCAG contrast formula itself, relevant to interpreting the residual variance our models leave unexplained: WCAG's ratio is based on relative luminance, not on a perceptually uniform distance measure. Two pairs with identical WCAG ratios can differ substantially in perceived contrast, which is part of why our CIELAB-space clustering was necessary in the first place -- the WCAG ratio alone cannot distinguish the qualitatively different failure patterns we report.
+
 \section{Limitations}
+
+This study has several limitations. First, we crawled homepages only, not full sites; a homepage that passes may sit atop a site with far worse compliance on interior pages (or vice versa). Second, we measured only color contrast, which is one of many WCAG success criteria; a chromatically compliant site can still be inaccessible on other dimensions (keyboard navigation, alt text, semantic structure). Third, the crawl captures a single point in time (August 2026); institutional websites are redesigned periodically, so these figures are not stable indefinitely. Fourth, the source domain list had no entries for Bolivia or Venezuela, so the 17-country sample is not a complete census of the region. Fifth, we used country as a proxy for institution type because a reliable public/private classification was not available across the source dataset; a finer-grained institutional variable might explain more of the residual variance in the $\chi^2$ and logistic models. Finally, the moderate correlation with \texttt{axe-core} reflects genuine methodological differences between contrast-ratio counting and axe-core's rule engine rather than a validity problem with either approach, but it means the two should be read as complementary rather than interchangeable estimates.
 
 \section{Conclusion}
 
+A homepage-level census of 259 Latin American university websites finds that WCAG AA contrast failures are the norm rather than the exception (93.5\% of sites affected, 21.6\% of all measured pairs), with compliance varying significantly by country. Against our own initial hypothesis, the colors involved in these failures do not reduce to a single ``light gray on white'' pattern: unsupervised clustering in CIELAB space reveals at least six distinct chromatic failure families, most of them fully saturated rather than washed-out. This suggests that institutional brand-color misuse, not a narrow stylistic trend, is the more likely driver, and that accessibility guidance for this region should address brand-palette contrast checking specifically rather than relying on generic ``avoid light gray text'' advice.
+
 \section*{Data Availability}
+The domain list, crawl logs, extracted color pairs, and analysis code will be published in a public repository with a Zenodo DOI upon submission (see \texttt{README.md} for the current repository location).
 
 \bibliographystyle{plain}
 \bibliography{refs}
