@@ -10,7 +10,7 @@
 - [x] Estadística (día 1) — χ², regresión logística, agrupamiento CIELAB
 - [x] Figuras generadas (4/4)
 - [x] Redacción del manuscrito (día 2) — `paper/main.tex` completo, 3 citas reales verificadas de JGED en `refs.bib`
-- [ ] Endurecimiento: DOIs verificados
+- [x] Endurecimiento: DOIs verificados
 - [ ] Endurecimiento: revisión adversarial ronda 1
 - [ ] Endurecimiento: revisión adversarial ronda 2
 - [ ] Revisión cruzada
@@ -92,3 +92,10 @@ Chi-cuadrado de independencia con corrección de continuidad; regresión logíst
 - Bloqueado en: nada. Falta Fase 2 completa (verificación formal de DOIs, revisión adversarial en 2 rondas, pasada anti-IA).
 - Siguiente: pasar al manuscrito del siguiente artículo, o iniciar Fase 2 sobre los ya redactados.
 - Tiempo de computo consumido: ~30 min
+
+
+## 21/08 - Juan — Verificación de referencias (Fase 2)
+- Hecho: los DOIs de las 3 citas se resolvieron uno por uno (HTTP 200/302 contra doi.org) y se confirmó que el contenido de cada artículo coincide con lo citado en el manuscrito. DOIs agregados a `refs.bib` con nota de verificación y fecha.
+- Bloqueado en: nada.
+- Siguiente: revisión adversarial ronda 1 (rol de revisor de la revista destino).
+- Tiempo de computo consumido: ~15 min
