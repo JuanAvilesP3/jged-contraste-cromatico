@@ -64,19 +64,19 @@ Chi-cuadrado de independencia con corrección de continuidad; regresión logíst
 
 ## Bitácora
 
-## 18/08 - Montaje
+## 18/08 - Juan — Montaje
 - Hecho: estructura de carpetas creada, plantilla de figuras copiada, repositorio Git inicializado.
 - Bloqueado en: pendiente ficha de revista y descarga de datos.
 - Siguiente: completar JOURNAL.md y descargar dataset.
 - Tiempo de computo consumido: 0h
 
-## 18-19/08 - Día 1: recolección de datos (dominios)
+## 18-19/08 - Juan — Día 1: recolección de datos (dominios)
 - Hecho: `00_build_domain_list.py` (245 dominios iniciales, dataset abierto Hipo/university-domains-list, 17 países LatAm) + `00b_backfill_domain_list.py` (219 dominios de relleno) + `01_download.py` con Playwright. Bugs reales corregidos: (1) robots.txt se pedía con el user-agent genérico de Python, que varios sitios bloqueaban con 403 → exclusión de sitios que sí permitían rastreo; (2) un sitio con diálogo JS sin manejador colgó el script 4 horas reales → reescrito con vigilante de tiempo por sitio. Resultado: **278 sitios descargados de 464 intentados** (60% éxito; el resto son sitios caídos, con DNS roto, o excluidos por robots.txt — documentado en `data/raw/download_log.csv` para la sección de limitaciones).
 - Bloqueado en: nada.
 - Siguiente: `02_preprocess.py` (extracción de pares de color, conversión CIELAB) y `03_experiment.py` (cálculo de ratio de contraste WCAG, χ², regresión logística).
 - Tiempo de computo consumido: ~1h
 
-## 20/08 - Día 1 completo: extracción, clasificación WCAG y estadística
+## 20/08 - Juan — Día 1 completo: extracción, clasificación WCAG y estadística
 - Hecho:
   - `02_preprocess.py`: revisita en vivo los 278 sitios (el HTML guardado no sirve para esto — no incluye el CSS externo, así que `getComputedStyle()` daría valores por defecto del navegador). Extrae pares de color efectivo texto/fondo, convierte a CIELAB, corre axe-core como validación cruzada. Bug real: `page.evaluate()` no tiene timeout propio en la API síncrona de Playwright y se colgó 30+ minutos sin avanzar — se agregó un vigilante por hilo que fuerza el cierre de la página si un sitio no responde en 30s. Resultado: 41,360 pares de color de 259 sitios.
   - `03_experiment.py`: clasificación falla/AA/AAA según tamaño de texto. 21.6% de los pares fallan AA; 93.5% de los sitios tienen al menos un fallo crítico; correlación moderada (0.35) con las violaciones detectadas por axe-core.
@@ -87,7 +87,7 @@ Chi-cuadrado de independencia con corrección de continuidad; regresión logíst
 - Siguiente: redactar `paper/main.tex`.
 - Tiempo de computo consumido: ~1h
 
-## 20/08 - Redacción del manuscrito
+## 20/08 - Juan — Redacción del manuscrito
 - Hecho: `paper/main.tex` completo (abstract, introducción, related work, metodología, resultados, discusión, limitaciones, conclusión). 3 citas reales de JGED buscadas y verificadas por URL directa (no inventadas) en `refs.bib`: Weingerl et al. 2022, Punsongserm & Suvakunta 2025, Ofosu-Asare 2024. Todos los números del manuscrito provienen directamente de los archivos de `results/tables/` (no estimados de memoria).
 - Bloqueado en: nada. Falta Fase 2 completa (verificación formal de DOIs, revisión adversarial en 2 rondas, pasada anti-IA).
 - Siguiente: pasar al manuscrito del siguiente artículo, o iniciar Fase 2 sobre los ya redactados.
