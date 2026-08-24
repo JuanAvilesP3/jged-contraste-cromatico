@@ -1,0 +1,2 @@
+n_sitios,n_paises,chi2,dof,p_asintotico,celda_esperada_minima,n_permutaciones,p_permutacion
+256,16,22.979722241900824,15,0.08457134748999832,0.33203125,10000,0.0807
