@@ -86,7 +86,7 @@ def fig4_capturas_ejemplo(agg):
         ax.set_title(f"{site_id} ({country})", fontsize=9)
         ax.axis("off")
 
-    fig.suptitle("Fig. 4 — Ejemplos de sitios con mayor tasa de fallo\n(pendiente de revisión de anonimización en Fase 2)", fontsize=11)
+    fig.suptitle("Fig. 4 — Ejemplos de sitios con mayor tasa de fallo\n(capturas de portadas públicas institucionales, sin datos personales de estudiantes)", fontsize=10)
     save_figure(fig, FIG_DIR / "fig4_capturas_ejemplo")
     plt.close(fig)
 

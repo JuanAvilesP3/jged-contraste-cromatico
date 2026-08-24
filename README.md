@@ -99,3 +99,24 @@ Chi-cuadrado de independencia con corrección de continuidad; regresión logíst
 - Bloqueado en: nada.
 - Siguiente: revisión adversarial ronda 1 (rol de revisor de la revista destino).
 - Tiempo de computo consumido: ~15 min
+
+
+## 20/08 - Juan — Revisión adversarial ronda 1 (rol JGED) + bibliografía ampliada + figuras
+- Hecho: bibliografía ampliada de 3 a 6 citas verificadas (WCAG 2.2, CIELAB 1976, WebAIM Million 2026). Revisión adversarial: se detectó que las 4 figuras existían como archivos pero nunca estaban insertadas en el manuscrito -- corregido. Se detectó un problema estadístico real: la prueba de "cumplimiento por país" se corría sobre 41,360 pares de color, pero esos pares están agrupados dentro de 259 sitios (no son observaciones independientes). Se recalculó la prueba al nivel correcto (sitio): el efecto por país deja de ser significativo (p=0.085 vs. p<0.001 al nivel de par). Se reescribió abstract, resultados, discusión, limitaciones y conclusión para reportarlo honestamente como hallazgo no confirmado, en vez de mantener la afirmación original. Pasada anti-IA parcial (frases repetidas entre los 5 artículos).
+- Bloqueado en: nada.
+- Siguiente: ronda 2 de revisión adversarial + pasada anti-IA completa.
+- Tiempo de computo consumido: ~35 min
+
+
+## 20/08 - Juan — Ronda 2 + pasada anti-IA
+- Hecho: segunda lectura crítica del manuscrito completo; se verificó que todas las figuras y tablas están referenciadas en el texto (no solo insertadas) y que no quedan referencias cruzadas rotas. Pasada anti-IA: se reescribieron frases que se repetían casi textualmente en otros artículos de la línea ("headline finding", "practical implication", "folklore").
+- Bloqueado en: nada.
+- Siguiente: conversión a Word (JGED lo exige) cuando se cierre la redacción final.
+- Tiempo de computo consumido: ~10 min
+
+
+## 20/08 - Juan — Conversión a Word (JGED lo exige)
+- Hecho: `paper/P2_JGED_manuscript.docx` generado a partir de `main.tex` (título, abstract, todas las secciones, tabla, las 4 figuras insertadas, y la bibliografía en formato autor-año). Primero verificado solo por lectura programática (sin Word instalado, pensé). El usuario aclaró que sí tiene Word -- usé automatización de Word (COM) para abrirlo de verdad y exportarlo a PDF, y revisé la versión visual real: título, tabla, las 4 figuras (bien proporcionadas) y referencias se ven correctos. De paso ajusté el ancho de columnas de la tabla para que sea más legible.
+- Bloqueado en: nada.
+- Siguiente: revisión final del usuario; luego, ajuste final a la plantilla oficial de JGED si la tienen.
+- Tiempo de computo consumido: ~25 min

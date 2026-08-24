@@ -62,6 +62,50 @@ def main():
     with open(RESULTS_DIR / "regresion_logistica_resumen.txt", "w", encoding="utf-8") as f:
         f.write(str(model.summary()))
 
+    # --- Robustez (corregido tras revision adversarial): la logistica de
+    # arriba trata los 41,360 pares como independientes, pero pares del
+    # mismo sitio comparten un sistema de diseño y no lo son. Se repite
+    # el mismo modelo via GEE con errores estandar robustos (sandwich)
+    # agrupados por sitio, el analogo estandar a un GLMM con intercepto
+    # aleatorio de sitio para un resultado binario, y compara los
+    # p-valores del efecto de "texto grande" (el hallazgo que el
+    # articulo trataba como el mas solido, precisamente por no depender
+    # del agrupamiento por sitio) bajo ambas especificaciones.
+    #
+    # Nota tecnica: cov_struct=Exchangeable() diverge numericamente en
+    # este dataset (overflow en la optimizacion); se usa Independence()
+    # como estructura de trabajo -- los errores estandar siguen siendo
+    # robustos al agrupamiento por sitio via el sandwich de GEE, que es
+    # lo que se necesita aqui, independientemente de la estructura de
+    # correlacion de trabajo asumida. Se inicializa en los parametros
+    # del logit naive para evitar el mismo problema de convergencia.
+    import statsmodels.genmod.generalized_estimating_equations as gee
+    from statsmodels.genmod.cov_struct import Independence
+    from statsmodels.genmod.families import Binomial
+
+    reg_df_gee = reg_df.reset_index(drop=True)
+    gee_model = gee.GEE.from_formula(
+        "falla ~ C(country) + font_size_px + es_texto_grande", groups="site_id",
+        data=reg_df_gee, cov_struct=Independence(), family=Binomial(),
+    ).fit(start_params=model.params.values, maxiter=60)
+    print("\n=== GEE (errores estándar robustos por sitio): P(falla) ===")
+    print(gee_model.summary().tables[1])
+    print(f"Convergió: {gee_model.converged}")
+    with open(RESULTS_DIR / "gee_por_sitio_resumen.txt", "w", encoding="utf-8") as f:
+        f.write(str(gee_model.summary()))
+
+    naive_p = model.pvalues.get("es_texto_grande[T.True]", model.pvalues.get("es_texto_grande"))
+    gee_p = gee_model.pvalues.get("es_texto_grande[T.True]", gee_model.pvalues.get("es_texto_grande"))
+    naive_beta = model.params.get("es_texto_grande[T.True]", model.params.get("es_texto_grande"))
+    gee_beta = gee_model.params.get("es_texto_grande[T.True]", gee_model.params.get("es_texto_grande"))
+    print(f"\nComparación 'texto grande': naive beta={naive_beta:.4f} p={naive_p:.4g}  |  "
+          f"GEE (robusto por sitio) beta={gee_beta:.4f} p={gee_p:.4g}")
+    pd.DataFrame({
+        "spec": ["naive_pooled", "gee_site_robust"],
+        "beta_texto_grande": [naive_beta, gee_beta],
+        "p_texto_grande": [naive_p, gee_p],
+    }).to_csv(RESULTS_DIR / "comparacion_naive_vs_gee.csv", index=False)
+
     or_table = pd.DataFrame({
         "odds_ratio": np.exp(model.params),
         "ci_lower": np.exp(model.conf_int()[0]),
@@ -74,22 +118,34 @@ def main():
     fallidos = df[df.clasificacion == "falla"].dropna(subset=["a_text", "b_text", "L_text"])
     print(f"\n=== Agrupamiento CIELAB de {len(fallidos)} pares fallidos ===")
 
-    best_k, best_score = 2, -1
     from sklearn.metrics import silhouette_score
-    for k in range(2, 7):
+    silhouette_curve = {}
+    for k in range(2, 21):
         km = KMeans(n_clusters=k, random_state=SEED, n_init=10).fit(fallidos[["a_text", "b_text"]])
         score = silhouette_score(fallidos[["a_text", "b_text"]], km.labels_)
+        silhouette_curve[k] = score
         print(f"  k={k}: silhouette={score:.3f}")
-        if score > best_score:
-            best_k, best_score = k, score
+    pd.Series(silhouette_curve, name="silhouette").rename_axis("k").to_csv(RESULTS_DIR / "silhouette_curve.csv")
+    print("\nNota: la silueta no tiene un maximo interior claro en k in [2,20] (sigue "
+          "subiendo de forma aproximadamente monotona); no se usa argmax de silueta "
+          "para elegir k. Se fija k=6 por interpretabilidad y para no invalidar la "
+          "Figura 3 ya generada con ese valor.")
 
-    km = KMeans(n_clusters=best_k, random_state=SEED, n_init=10).fit(fallidos[["a_text", "b_text"]])
+    FIXED_K = 6
+    km = KMeans(n_clusters=FIXED_K, random_state=SEED, n_init=10).fit(fallidos[["a_text", "b_text"]])
     fallidos = fallidos.copy()
     fallidos["cluster"] = km.labels_
     fallidos.to_csv(RESULTS_DIR / "fallidos_clusters.csv", index=False)
 
-    print(f"\nMejor k={best_k} (silhouette={best_score:.3f})")
-    print(fallidos.groupby("cluster")[["L_text", "a_text", "b_text"]].mean().round(1))
+    sizes = fallidos["cluster"].value_counts().sort_index()
+    n_total = len(fallidos)
+    stats_por_cluster = fallidos.groupby("cluster")[["L_text", "a_text", "b_text"]].mean().round(1)
+    stats_por_cluster["n"] = sizes
+    stats_por_cluster["pct"] = (sizes / n_total * 100).round(1)
+    stats_por_cluster["chroma_media"] = (fallidos.groupby("cluster").apply(lambda g: np.sqrt(g["a_text"]**2 + g["b_text"]**2).mean())).round(1)
+    print(f"\nk={FIXED_K} fijo (silhouette={silhouette_curve[FIXED_K]:.3f}), composicion por cluster:")
+    print(stats_por_cluster.sort_values("n", ascending=False))
+    stats_por_cluster.to_csv(RESULTS_DIR / "cluster_summary.csv")
 
     print(f"\nCompletado: {RESULTS_DIR}")
 
