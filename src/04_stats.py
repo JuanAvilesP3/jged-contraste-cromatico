@@ -115,36 +115,51 @@ def main():
     or_table.to_csv(RESULTS_DIR / "odds_ratios.csv")
 
     # --- Agrupamiento CIELAB de los pares fallidos (color de texto) ---
+    # Corregido tras revision adversarial (ronda 2): agrupar solo en el
+    # plano a*b* es casi circular, porque WCAG falla por LUMINANCIA
+    # relativa y a*b* descarta L*, la variable que gobierna el fallo.
+    # Cualquier color acromatico (negro, gris, blanco) colapsa al origen
+    # en a*b* sin importar su L*, garantizando un cluster neutro
+    # dominante por construccion. Se agrupa ahora en el espacio L*a*b*
+    # completo, estandarizado (las tres variables tienen escalas
+    # distintas), para que la particion pueda distinguir un blanco casi
+    # puro (posible artefacto de background-image, ver Limitaciones) de
+    # un gris medio autentico, en vez de fundirlos.
+    from sklearn.preprocessing import StandardScaler
+
     fallidos = df[df.clasificacion == "falla"].dropna(subset=["a_text", "b_text", "L_text"])
-    print(f"\n=== Agrupamiento CIELAB de {len(fallidos)} pares fallidos ===")
+    print(f"\n=== Agrupamiento CIELAB (L*a*b* completo, estandarizado) de {len(fallidos)} pares fallidos ===")
+
+    X = fallidos[["L_text", "a_text", "b_text"]].values
+    Xs = StandardScaler().fit_transform(X)
 
     from sklearn.metrics import silhouette_score
     silhouette_curve = {}
     for k in range(2, 21):
-        km = KMeans(n_clusters=k, random_state=SEED, n_init=10).fit(fallidos[["a_text", "b_text"]])
-        score = silhouette_score(fallidos[["a_text", "b_text"]], km.labels_)
+        km = KMeans(n_clusters=k, random_state=SEED, n_init=10).fit(Xs)
+        score = silhouette_score(Xs, km.labels_)
         silhouette_curve[k] = score
         print(f"  k={k}: silhouette={score:.3f}")
     pd.Series(silhouette_curve, name="silhouette").rename_axis("k").to_csv(RESULTS_DIR / "silhouette_curve.csv")
-    print("\nNota: la silueta no tiene un maximo interior claro en k in [2,20] (sigue "
-          "subiendo de forma aproximadamente monotona); no se usa argmax de silueta "
-          "para elegir k. Se fija k=6 por interpretabilidad y para no invalidar la "
-          "Figura 3 ya generada con ese valor.")
+    print("\nNota: la silueta no tiene un maximo interior claro en k in [2,20]; no se "
+          "usa argmax de silueta para elegir k. Se fija k=6 por interpretabilidad y "
+          "continuidad con el reporte previo.")
 
     FIXED_K = 6
-    km = KMeans(n_clusters=FIXED_K, random_state=SEED, n_init=10).fit(fallidos[["a_text", "b_text"]])
+    km = KMeans(n_clusters=FIXED_K, random_state=SEED, n_init=10).fit(Xs)
     fallidos = fallidos.copy()
     fallidos["cluster"] = km.labels_
     fallidos.to_csv(RESULTS_DIR / "fallidos_clusters.csv", index=False)
 
-    sizes = fallidos["cluster"].value_counts().sort_index()
+    sizes = fallidos["cluster"].value_counts()
     n_total = len(fallidos)
     stats_por_cluster = fallidos.groupby("cluster")[["L_text", "a_text", "b_text"]].mean().round(1)
     stats_por_cluster["n"] = sizes
     stats_por_cluster["pct"] = (sizes / n_total * 100).round(1)
     stats_por_cluster["chroma_media"] = (fallidos.groupby("cluster").apply(lambda g: np.sqrt(g["a_text"]**2 + g["b_text"]**2).mean())).round(1)
+    stats_por_cluster = stats_por_cluster.sort_values("n", ascending=False)
     print(f"\nk={FIXED_K} fijo (silhouette={silhouette_curve[FIXED_K]:.3f}), composicion por cluster:")
-    print(stats_por_cluster.sort_values("n", ascending=False))
+    print(stats_por_cluster)
     stats_por_cluster.to_csv(RESULTS_DIR / "cluster_summary.csv")
 
     print(f"\nCompletado: {RESULTS_DIR}")
