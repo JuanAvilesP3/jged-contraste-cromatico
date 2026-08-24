@@ -48,7 +48,7 @@ def main():
 
     print("=== Chi-cuadrado: cumplimiento AA × país ===")
     print(f"chi2={chi2:.2f}  dof={dof}  p={p:.6f}  V de Cramér={v:.3f}")
-    print(f"(países incluidos, ≥30 pares: {list(valid_countries)})")
+    print(f"(países incluidos, >=30 pares: {list(valid_countries)})")
     contingency.to_csv(RESULTS_DIR / "tabla_contingencia_pais.csv")
 
     # --- Regresion logistica ---
