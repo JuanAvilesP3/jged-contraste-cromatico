@@ -162,6 +162,49 @@ def main():
     print(stats_por_cluster)
     stats_por_cluster.to_csv(RESULTS_DIR / "cluster_summary.csv")
 
+    # --- Chi-cuadrado a nivel de SITIO: pais x tiene-al-menos-un-fallo ---
+    # Corregido tras revision adversarial (ronda 2): esta prueba (256
+    # sitios, p=0.085, citada en el manuscrito) se habia corrido antes
+    # de forma ad hoc y nunca quedo en un script versionado -- mismo
+    # patron de bug que el ANOVA de P6. Se reconstruye aqui de forma
+    # reproducible y se agrega una prueba de permutacion (Monte Carlo)
+    # como robustez, porque con 16 paises y una tasa de fallo alta
+    # (~93%) varias celdas esperadas de "sin fallo" caen bajo 5, lo que
+    # hace que la aproximacion asintotica del chi-cuadrado sea fragil.
+    sitio_df = pd.read_csv(RESULTS_DIR / "agregado_por_sitio.csv")
+    site_counts = sitio_df["country"].value_counts()
+    valid_site_countries = site_counts[site_counts >= 5].index
+    sitio_valido = sitio_df[sitio_df.country.isin(valid_site_countries)].copy()
+
+    contingency_sitio = pd.crosstab(sitio_valido["country"], sitio_valido["tiene_fallo_critico"])
+    chi2_sitio, p_sitio, dof_sitio, expected_sitio = chi2_contingency(contingency_sitio, correction=True)
+    min_expected = expected_sitio.min()
+
+    print(f"\n=== Chi-cuadrado a nivel de sitio: pais x tiene-fallo-critico ===")
+    print(f"n_sitios={len(sitio_valido)} paises={len(valid_site_countries)} "
+          f"chi2={chi2_sitio:.2f} dof={dof_sitio} p={p_sitio:.4f} "
+          f"(celda esperada minima={min_expected:.2f})")
+
+    n_perm = 10000
+    rng = np.random.RandomState(SEED)
+    country_arr = sitio_valido["country"].values
+    fallo_arr = sitio_valido["tiene_fallo_critico"].values
+    perm_stats = np.empty(n_perm)
+    for i in range(n_perm):
+        shuffled = rng.permutation(fallo_arr)
+        perm_table = pd.crosstab(country_arr, shuffled)
+        perm_stats[i] = chi2_contingency(perm_table, correction=True)[0]
+    p_perm = (perm_stats >= chi2_sitio).mean()
+
+    print(f"Prueba de permutacion Monte Carlo ({n_perm} reordenamientos): p={p_perm:.4f}")
+
+    pd.DataFrame([{
+        "n_sitios": len(sitio_valido), "n_paises": len(valid_site_countries),
+        "chi2": chi2_sitio, "dof": dof_sitio, "p_asintotico": p_sitio,
+        "celda_esperada_minima": min_expected,
+        "n_permutaciones": n_perm, "p_permutacion": p_perm,
+    }]).to_csv(RESULTS_DIR / "chi2_sitio_pais.csv", index=False)
+
     print(f"\nCompletado: {RESULTS_DIR}")
 
 
