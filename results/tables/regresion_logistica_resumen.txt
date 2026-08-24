@@ -4,7 +4,7 @@ Dep. Variable:                  falla   No. Observations:                41360
 Model:                          Logit   Df Residuals:                    41341
 Method:                           MLE   Df Model:                           18
 Date:                Sun, 23 Aug 2026   Pseudo R-squ.:                 0.04513
-Time:                        16:14:25   Log-Likelihood:                -20597.
+Time:                        21:27:55   Log-Likelihood:                -20597.
 converged:                       True   LL-Null:                       -21570.
 Covariance Type:            nonrobust   LLR p-value:                     0.000
 ====================================================================================================

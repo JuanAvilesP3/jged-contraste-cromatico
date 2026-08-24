@@ -7,7 +7,7 @@ Method:                        Generalized   Min. cluster size:                 
 Family:                           Binomial   Mean cluster size:               159.7
 Dependence structure:         Independence   Num. iterations:                     2
 Date:                     Sun, 23 Aug 2026   Scale:                           1.000
-Covariance type:                    robust   Time:                         16:14:26
+Covariance type:                    robust   Time:                         21:27:55
 ====================================================================================================
                                        coef    std err          z      P>|z|      [0.025      0.975]
 ----------------------------------------------------------------------------------------------------
