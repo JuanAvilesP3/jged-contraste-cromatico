@@ -29,14 +29,13 @@ SCREENSHOTS_DIR = Path(__file__).resolve().parent.parent / "data" / "raw" / "scr
 
 
 def fig1_histograma(df):
-    fig, ax = plt.subplots(figsize=(8.5, 5.5))
+    fig, ax = plt.subplots(figsize=(8, 5))
     ax.hist(df["contrast_ratio"].clip(upper=15), bins=60, color=COLORS["secondary"], edgecolor="white", linewidth=0.3)
     for thresh, label in [(3, "3:1"), (4.5, "4.5:1"), (7, "7:1")]:
         ax.axvline(thresh, color=COLORS["primary"], linestyle="--", linewidth=1.2)
         ax.text(thresh, ax.get_ylim()[1] * 0.95, label, rotation=90, va="top", ha="right", fontsize=8, color=COLORS["primary"])
-    ax.set_xlabel("Ratio de contraste WCAG")
-    ax.set_ylabel("Número de pares de color")
-    ax.set_title("Fig. 1 — Distribución de ratios de contraste (41,360 pares)")
+    ax.set_xlabel("WCAG Contrast Ratio")
+    ax.set_ylabel("Number of Color Pairs")
     save_figure(fig, FIG_DIR / "fig1_histograma_contraste")
     plt.close(fig)
 
@@ -46,24 +45,23 @@ def fig2_cumplimiento_por_pais(agg):
         pct_cumple=("pct_falla_aa", lambda s: 100 - s.mean()), n=("site_id", "count")
     ).query("n >= 3").sort_values("pct_cumple")
 
-    fig, ax = plt.subplots(figsize=(8, max(5, len(by_country) * 0.32)))
+    fig, ax = plt.subplots(figsize=(7.5, max(4.5, len(by_country) * 0.3)))
     ax.barh(by_country.index, by_country["pct_cumple"], color=COLORS["primary"])
-    ax.set_xlabel("% medio de pares que cumplen AA por sitio")
-    ax.set_title("Fig. 2 — Cumplimiento AA por país (≥3 sitios)")
+    ax.set_xlabel("Mean AA Compliance Rate per Website (%)")
+    ax.set_ylabel("Country")
     save_figure(fig, FIG_DIR / "fig2_cumplimiento_por_pais")
     plt.close(fig)
 
 
 def fig3_dispersion_cielab(fallidos):
-    fig, ax = plt.subplots(figsize=(8, 7))
+    fig, ax = plt.subplots(figsize=(7.5, 6.5))
     sizes = 8 + (fallidos["L_text"] / fallidos["L_text"].max()) * 60
     scatter = ax.scatter(fallidos["a_text"], fallidos["b_text"], s=sizes, c=fallidos["cluster"],
                           cmap="tab10", alpha=0.5, edgecolors="none")
     ax.axhline(0, color="grey", linewidth=0.5)
     ax.axvline(0, color="grey", linewidth=0.5)
-    ax.set_xlabel("a* (verde ↔ rojo)")
-    ax.set_ylabel("b* (azul ↔ amarillo)")
-    ax.set_title("Fig. 3 — Pares fallidos en el plano a*b* de CIELAB\n(tamaño = L*, color = clúster)")
+    ax.set_xlabel(r"$a^*$ (Green $\leftrightarrow$ Red)")
+    ax.set_ylabel(r"$b^*$ (Blue $\leftrightarrow$ Yellow)")
     save_figure(fig, FIG_DIR / "fig3_dispersion_cielab")
     plt.close(fig)
 
@@ -78,15 +76,14 @@ def fig4_capturas_ejemplo(agg):
         if len(chosen) == 4:
             break
 
-    fig, axes = plt.subplots(2, 2, figsize=(11, 9))
+    fig, axes = plt.subplots(2, 2, figsize=(10, 8))
     for ax, (site_id, country, path) in zip(axes.flat, chosen):
         img = mpimg.imread(path)
         h = img.shape[0]
         ax.imshow(img[: min(h, 900), :, :])  # recorte a la parte superior visible
-        ax.set_title(f"{site_id} ({country})", fontsize=9)
+        ax.set_title(f"{site_id} ({country})", fontsize=8.5)
         ax.axis("off")
 
-    fig.suptitle("Fig. 4 — Ejemplos de sitios con mayor tasa de fallo\n(capturas de portadas públicas institucionales, sin datos personales de estudiantes)", fontsize=10)
     save_figure(fig, FIG_DIR / "fig4_capturas_ejemplo")
     plt.close(fig)
 
