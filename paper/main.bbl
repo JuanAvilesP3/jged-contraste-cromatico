@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{cie1976colorimetry}
+{International Commission on Illumination (CIE)}.
+\newblock Colorimetry -- part 4: {CIE} 1976 {L*a*b*} colour space.
+\newblock Technical report, CIE, 1976.
+
+\bibitem{ofosuasare2024enhancing}
+Yaw Ofosu-Asare.
+\newblock Enhancing user experience in online learning environments: Design,
+  evaluation, and usability techniques.
+\newblock {\em Journal of Graphic Engineering and Design}, 15(4):45--59, 2024.
+
+\bibitem{punsongserm2025thai}
+Rachapoom Punsongserm and Pittaya Suvakunta.
+\newblock Enhancing accessibility of {Thai} government mobile applications
+  through effective use of typefaces, type sizes, and colour contrast: A
+  technical review.
+\newblock {\em Journal of Graphic Engineering and Design}, 16(1), 2025.
+
+\bibitem{webaim2026million}
+{WebAIM}.
+\newblock The {WebAIM} million: The 2026 report on the accessibility of the top
+  1,000,000 home pages, 2026.
+
+\bibitem{weingerl2022visibility}
+Primo\v{z} Weingerl, Uro\v{s} Nedeljkovi\'{c}, and Nace Pu\v{s}nik.
+\newblock Visibility and legibility of five-letter words in different
+  experimental conditions.
+\newblock {\em Journal of Graphic Engineering and Design}, 13(3):51--58, 2022.
+
+\bibitem{w3c2023wcag}
+{World Wide Web Consortium (W3C)}.
+\newblock Web content accessibility guidelines ({WCAG}) 2.2.
+\newblock Technical report, W3C, 2023.
+\newblock W3C Recommendation, 5 October 2023.
+
+\end{thebibliography}
