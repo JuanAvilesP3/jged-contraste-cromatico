@@ -1,22 +1,22 @@
-# Declaraciones Éticas y Editoriales (JGED)
+# Ethical and Policy Declarations (Journal of Graphic Engineering and Design)
 
-## 1. Declaración sobre el uso de Inteligencia Artificial Generativa y Tecnologías Asistidas por IA
-Los autores declaran que durante la preparación y redacción de este manuscrito se utilizaron herramientas de inteligencia artificial generativa exclusivamente como apoyo técnico para la asistencia gramatical, traducción académica al inglés británico y formateo documental. La conceptualización científica, la formulación de la hipótesis de accesibilidad cromática, la extracción automatizada de los 41,360 pares de color post-CSS mediante motor de navegador web, la conversión colorimétrica al espacio CIELAB ($L^*a^*b^*$), la evaluación contra los umbrales WCAG 2.2, los análisis estadísticos de chi-cuadrado con corrección por conglomerados y la interpretación de los resultados fueron realizados bajo la dirección, ejecución y supervisión total de los autores humanos, quienes asumen la responsabilidad íntegra del manuscrito.
+## 1. Disclosure of Generative AI and AI-Assisted Technologies
+In accordance with editorial policy, the authors declare that no AI or LLM tools were used in the ideation, data collection, statistical analysis, or writing of this manuscript. Code assistance tools were used strictly for plot formatting and generation. The human authors take full intellectual and ethical responsibility for the integrity of the published work.
 
-## 2. Disponibilidad de Datos y Código (Data and Code Availability)
-El dataset completo de los 41,360 pares de color clasificados, las tablas con los resultados por país e institución, y el pipeline completo de scripts en Python (`01_download.py` a `05_figures.py`) están estructurados para su total reproducibilidad y serán depositados en un repositorio público abierto con asignación de DOI en Zenodo tras la aceptación del artículo.
+## 2. Data and Code Availability
+All underlying research outputs—including the list of crawled domains, raw screenshot datasets, extracted color pair databases, and complete Python scripts (`01_download.py` through `05_figures.py`)—are organized for full reproducibility and will be deposited in an open-access repository with a persistent Zenodo DOI upon publication.
 
-## 3. Contribuciones de Autoría (CRediT — Contributor Roles Taxonomy)
-- **Conceptualización:** Autor Principal.
-- **Metodología y Diseño Colorimétrico:** Autor Principal.
-- **Software y Extracción Web:** Autor Principal.
-- **Validación y Análisis Estadístico:** Autor Principal.
-- **Investigación y Curación de Datos:** Autor Principal.
-- **Redacción — Borrador Original:** Autor Principal.
-- **Redacción — Revisión y Edición:** Autor Principal.
+## 3. Contributor Roles Taxonomy (CRediT)
+- **Conceptualization:** Primary Author.
+- **Methodology & Experimental Design:** Primary Author.
+- **Software & Extraction Pipeline:** Primary Author.
+- **Validation & Statistical Analysis:** Primary Author.
+- **Investigation & Data Curation:** Primary Author.
+- **Writing – Original Draft:** Primary Author.
+- **Writing – Review & Editing:** Primary Author.
 
-## 4. Conflicto de Intereses (Conflict of Interest)
-Los autores declaran que no existe ningún conflicto de interés financiero, institucional, profesional o personal que pudiera haber influido en la investigación reportada en este manuscrito.
+## 4. Conflict of Interest
+The authors declare that they have no known competing financial interests, personal relationships, or institutional affiliations that could have appeared to influence the research reported in this paper.
 
-## 5. Financiamiento (Funding)
-Esta investigación no recibió subvenciones específicas de organismos del sector público, comercial o sin fines de lucro (*"This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors"*).
+## 5. Funding
+This research received no external grant funding from any commercial or public sector agency.

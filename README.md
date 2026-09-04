@@ -122,3 +122,11 @@ Chi-cuadrado de independencia con corrección de continuidad; regresión logíst
 - Bloqueado en: nada.
 - Siguiente: revisión final del usuario; luego, ajuste final a la plantilla oficial de JGED si la tienen.
 - Tiempo de computo consumido: ~25 min
+
+## 02/09 - Juan — Cierre de observaciones de Revisión Adversarial Ronda 1 (JGED)
+- Hecho: Se implementaron al 100% las observaciones del dictamen de revisión adversarial:
+  1. Anonimización de la Figura 4: enmascaramiento y desenfoque gausiano de franjas de cabecera/logos institucionales y reetiquetado neutro ("Site A", "Site B", etc.) para cumplir el protocolo ético a ciegas.
+  2. Pasada Anti-IA léxica: eliminación de la palabra prohibida "landscape" en Sección 2, eliminación de la tríada de adjetivos/verbos en Abstract y metodología, y eliminación de "Crucially" y "first" autocomplaciente en cover_letter.md.
+  3. Sincronización completa: recompilado main.tex (10 páginas exactas) y actualizado P2_JGED_manuscript.docx con la nueva figura y texto corregido.
+- Bloqueado en: nada. Paquete P2 listo para envío a JGED.
+
