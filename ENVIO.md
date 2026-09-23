@@ -3,9 +3,13 @@
 - **Revista destino:** *Journal of Graphic Engineering and Design* (JGED), University of Novi Sad, Faculty of Technical Sciences, Serbia.
 - **Indexación:** Scopus, DOAJ, SCImago, Google Scholar, Serbian Citation Index (SCIndeks).
 - **URL del portal de envío (OJS):** [https://jged.uns.ac.rs/index.php/jged/about/submissions](https://jged.uns.ac.rs/index.php/jged/about/submissions)
+- **Modalidad de revisión por pares:** **Doble Ciego (Double-Blind Peer Review)**. La identidad de autores y evaluadores se mantiene oculta durante todo el proceso de revisión.
 - **Modalidad de procesamiento:** Regular Research Paper.
 - **Cobra APC?:** **NO ($0 USD)**. Publicación 100% gratuita y de acceso abierto diamante ("JGED does not have Article Processing Charges nor article submission charges").
-- **Archivo principal a subir:** [`paper/P2_JGED_manuscript.docx`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript.docx) (Word oficial exigido por JGED, 10 páginas A4, estilo Harvard) y PDF de respaldo [`paper/P2_JGED_manuscript.pdf`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript.pdf).
+- **Archivos a subir en la plataforma OJS:**
+  1. **Manuscrito principal para revisores (Blind):** [`paper/P2_JGED_manuscript.docx`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript.docx) (Word oficial exigido por JGED, 10 páginas A4, anonimizado sin autores) o PDF anonimizado [`paper/P2_JGED_manuscript_blinded.pdf`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript_blinded.pdf).
+  2. **Página de título con datos de autores (Title Page para el Editor):** [`paper/Title_Page_JGED.docx`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/Title_Page_JGED.docx) y [`paper/Title_Page_JGED.pdf`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/Title_Page_JGED.pdf) con los datos completos de los 3 autores, filiaciones, ORCID y correspondencia.
+  3. **Manuscrito completo identificado (para archivo / versión aceptada):** [`paper/P2_JGED_manuscript.pdf`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript.pdf).
 - **Archivos complementarios:**
   1. `paper/cover_letter.md` (Carta formal al Editor en Jefe).
   2. `paper/declaraciones.md` (Declaraciones CRediT, COPE de IA, conflictos de interés y disponibilidad en Zenodo: DOI 10.5281/zenodo.22907770).
@@ -33,5 +37,6 @@
 - **Notas editoriales críticas:**
   - Manuscrito ajustado a 10 páginas (límite máximo permitido de 12 páginas A4).
   - Figuras totalmente anonimizadas (logos y sellos institucionales difuminados).
+  - Cumplimiento estricto de doble ciego: metadatos de autoría subidos en OJS y en la Title Page separada; manuscrito de evaluación sin datos identificatorios.
   - Estilo de citación autor-año Harvard estricto.
   - Citas locales a artículos de JGED (*Abd El-Rahman et al. 2021, Aydemir et al. 2021*).
