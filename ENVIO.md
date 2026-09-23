@@ -8,7 +8,7 @@
 - **Archivo principal a subir:** [`paper/P2_JGED_manuscript.docx`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript.docx) (Word oficial exigido por JGED, 10 páginas A4, estilo Harvard) y PDF de respaldo [`paper/P2_JGED_manuscript.pdf`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript.pdf).
 - **Archivos complementarios:**
   1. `paper/cover_letter.md` (Carta formal al Editor en Jefe).
-  2. `paper/declaraciones.md` (Declaraciones CRediT, COPE de IA, conflictos de interés y disponibilidad en Zenodo).
+  2. `paper/declaraciones.md` (Declaraciones CRediT, COPE de IA, conflictos de interés y disponibilidad en Zenodo: DOI 10.5281/zenodo.22907770).
   3. Archivo comprimido con figuras vectoriales de alta resolución (`figures/`).
 - **Autores en orden:**
   1. **Juan Pablo Aviles-Esparza** (`juan.aviles@espoch.edu.ec`, ESPOCH, ORCID: `0009-0007-0058-8069`).
