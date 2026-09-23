@@ -7,16 +7,16 @@ In accordance with editorial policy, the authors declare that no AI or LLM tools
 All underlying research outputs—including the list of crawled domains, raw screenshot datasets, extracted color pair databases, and complete Python scripts (`01_download.py` through `05_figures.py`)—are organized for full reproducibility and will be deposited in an open-access repository with a persistent Zenodo DOI upon publication.
 
 ## 3. Contributor Roles Taxonomy (CRediT)
-- **Conceptualization:** Primary Author.
-- **Methodology & Experimental Design:** Primary Author.
-- **Software & Extraction Pipeline:** Primary Author.
-- **Validation & Statistical Analysis:** Primary Author.
-- **Investigation & Data Curation:** Primary Author.
-- **Writing – Original Draft:** Primary Author.
-- **Writing – Review & Editing:** Primary Author.
+- **Conceptualization:** Juan Pablo Aviles-Esparza, Isaac David Torres-Paredes.
+- **Methodology & Experimental Design:** Juan Pablo Aviles-Esparza, Isaac David Torres-Paredes.
+- **Software & Crawler Pipeline:** Juan Pablo Aviles-Esparza, Italo Tenempaguay-Granizo.
+- **Validation & Colorimetric Analysis:** Juan Pablo Aviles-Esparza, Italo Tenempaguay-Granizo.
+- **Investigation & Data Curation:** Juan Pablo Aviles-Esparza, Italo Tenempaguay-Granizo.
+- **Writing – Original Draft:** Juan Pablo Aviles-Esparza.
+- **Writing – Review & Editing:** Isaac David Torres-Paredes, Italo Tenempaguay-Granizo.
 
 ## 4. Conflict of Interest
-The authors declare that they have no known competing financial interests, personal relationships, or institutional affiliations that could have appeared to influence the research reported in this paper.
+The authors declare that they have no competing financial, personal, or institutional interests that could have influenced the research reported in this manuscript.
 
 ## 5. Funding
-This research received no external grant funding from any commercial or public sector agency.
+This research received no external grant funding from any commercial or public sector agency. All logistical and infrastructure support was provided by Escuela Superior Politécnica de Chimborazo (ESPOCH).

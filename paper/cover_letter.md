@@ -43,8 +43,8 @@ In accordance with JGED submission practices, we suggest the following three ind
 Thank you very much for your editorial consideration of our manuscript.
 
 Sincerely,
-
-**The Authors**  
-Department / Faculty  
-Institution Name, City, Country  
-*Corresponding e-mail:* `author@email.edu`
+ 
+**Juan Pablo Aviles-Esparza** (on behalf of all coauthors)  
+Software Engineering, Faculty of Informatics and Electronics  
+Escuela Superior Politécnica de Chimborazo (ESPOCH), Riobamba 060155, Ecuador  
+*Corresponding e-mail:* `juan.aviles@espoch.edu.ec`

@@ -11,8 +11,10 @@
   2. `paper/declaraciones.md` (Declaraciones CRediT, COPE de IA, conflictos de interés y disponibilidad en Zenodo).
   3. Archivo comprimido con figuras vectoriales de alta resolución (`figures/`).
 - **Autores en orden:**
-  - Los campos de autoría, filiación institucional, correo y ORCID se ingresan en el formulario OJS.
-- **Autor de correspondencia:** A definir en la cuenta de envío OJS.
+  1. **Juan Pablo Aviles-Esparza** (`juan.aviles@espoch.edu.ec`, ESPOCH, ORCID: `0009-0007-0058-8069`).
+  2. **Italo Javier Tenempaguay-Granizo** (`italo.tenempaguay@espoch.edu.ec`, ESPOCH, ORCID: `0009-0001-5753-4279`).
+  3. **Isaac David Torres-Paredes** (`isaac.torres@espoch.edu.ec`, ESPOCH, ORCID: `0009-0001-7057-9316`).
+- **Autor de correspondencia:** Juan Pablo Aviles-Esparza (`juan.aviles@espoch.edu.ec`).
 - **Palabras clave para el formulario OJS:**
   `Chromatic contrast`, `Color difference`, `CIELAB`, `Delta E 2000`, `Visual accessibility`, `Web typography`, `Information ergonomics`.
 - **Revisores pares sugeridos (3 expertos internacionales):**
