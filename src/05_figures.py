@@ -25,6 +25,8 @@ from figures_style import COLORS, apply_style, save_figure
 
 RESULTS_DIR = Path(__file__).resolve().parent.parent / "results" / "tables"
 FIG_DIR = Path(__file__).resolve().parent.parent / "results" / "figures"
+PAPER_FIG_DIR = Path(__file__).resolve().parent.parent / "paper" / "figures"
+PAPER_FIG_DIR.mkdir(parents=True, exist_ok=True)
 SCREENSHOTS_DIR = Path(__file__).resolve().parent.parent / "data" / "raw" / "screenshots"
 
 
@@ -38,6 +40,7 @@ def fig1_histograma(df):
     ax.set_xlabel("WCAG Contrast Ratio")
     ax.set_ylabel("Number of Color Pairs")
     save_figure(fig, FIG_DIR / "fig1_histograma_contraste")
+    save_figure(fig, PAPER_FIG_DIR / "fig1_histograma_contraste")
     plt.close(fig)
 
 
@@ -51,6 +54,7 @@ def fig2_cumplimiento_por_pais(agg):
     ax.set_xlabel("Mean AA Compliance Rate per Website (%)")
     ax.set_ylabel("Country")
     save_figure(fig, FIG_DIR / "fig2_cumplimiento_por_pais")
+    save_figure(fig, PAPER_FIG_DIR / "fig2_cumplimiento_por_pais")
     plt.close(fig)
 
 
@@ -68,6 +72,7 @@ def fig3_dispersion_cielab(fallidos):
     ax.set_xlabel(r"$a^*$ (Green $\leftrightarrow$ Red)")
     ax.set_ylabel(r"$b^*$ (Blue $\leftrightarrow$ Yellow)")
     save_figure(fig, FIG_DIR / "fig3_dispersion_cielab")
+    save_figure(fig, PAPER_FIG_DIR / "fig3_dispersion_cielab")
     plt.close(fig)
 
 
@@ -104,6 +109,7 @@ def fig4_capturas_ejemplo(agg):
         ax.axis("off")
 
     save_figure(fig, FIG_DIR / "fig4_capturas_ejemplo")
+    save_figure(fig, PAPER_FIG_DIR / "fig4_capturas_ejemplo")
     plt.close(fig)
 
 
