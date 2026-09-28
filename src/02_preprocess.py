@@ -33,7 +33,14 @@ from playwright.sync_api import sync_playwright
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
 PROC_DIR = Path(__file__).resolve().parent.parent / "data" / "processed"
-AXE_JS_PATH = Path("C:/Users/Juan/AppData/Roaming/npm/node_modules/axe-core/axe.min.js")
+# Resolucion portable de axe-core (local o global npm)
+candidate_axe_paths = [
+    Path(__file__).resolve().parent.parent / "node_modules" / "axe-core" / "axe.min.js",
+    Path(os.environ.get("APPDATA", "")) / "npm" / "node_modules" / "axe-core" / "axe.min.js",
+    Path("C:/Users/Juan/AppData/Roaming/npm/node_modules/axe-core/axe.min.js"),
+    Path("/usr/local/lib/node_modules/axe-core/axe.min.js"),
+]
+AXE_JS_PATH = next((p for p in candidate_axe_paths if p.exists()), candidate_axe_paths[0])
 
 REQUEST_DELAY_SECONDS = 2.0
 PAGE_TIMEOUT_MS = 20_000
@@ -83,12 +90,18 @@ EXTRACT_JS = """
 """
 
 
-def rgb_string_to_tuple(rgb_str):
+def rgb_string_to_tuple(rgb_str, default_bg=(255, 255, 255)):
     import re
     m = re.match(r"rgba?\(([^)]+)\)", rgb_str or "")
     if not m:
         return None
     parts = [float(x) for x in m.group(1).split(",")]
+    if len(parts) >= 4:
+        alpha = parts[3]
+        r = round(alpha * parts[0] + (1.0 - alpha) * default_bg[0])
+        g = round(alpha * parts[1] + (1.0 - alpha) * default_bg[1])
+        b = round(alpha * parts[2] + (1.0 - alpha) * default_bg[2])
+        return (min(255, max(0, r)), min(255, max(0, g)), min(255, max(0, b)))
     return tuple(parts[:3])
 
 
