@@ -1,4 +1,9 @@
 # Ficha de Instrucciones de Envío — Paper P2
+**Proyecto:** Accesibilidad Cromática en Sitios Web Universitarios Latinoamericanos (WCAG 2.2 y CIELAB)  
+**Marco Institucional:** FIE-ESPOCH 2026 (Planificación Oficial de Producción Científica)  
+**Fecha de Actualización:** 28 de septiembre de 2026  
+
+---
 
 ## 1. Identificación de la Revista y Política Editorial
 - **Revista destino:** *Journal of Graphic Engineering and Design* (JGED)
@@ -6,12 +11,14 @@
 - **ISSN:** 2217-379X (Impreso) | 2217-9860 (En línea).
 - **Indexación oficial:** Scopus, DOAJ, SCImago, Google Scholar, Serbian Citation Index (SCIndeks).
 - **Portal oficial de envíos (OJS):** [https://jged.uns.ac.rs/index.php/jged/about/submissions](https://jged.uns.ac.rs/index.php/jged/about/submissions)
+- **Editor en Jefe:** Prof. Dr. Nemanja Kašiković (`knemanja@uns.ac.rs`).
 - **Modalidad de revisión por pares:** **DOBLE CIEGO (Double-Blind Peer Review) ESTRICTO**.
-  - La identidad de los autores y evaluadores debe permanecer totalmente oculta durante la revisión.
-  - El archivo principal para los revisores **NO** debe contener nombres, filiaciones ni agradecimientos identificatorios.
-  - La información de los autores se envía en una **Página de Título separada (Title Page)** para el Editor.
+  - La identidad de los autores y evaluadores debe permanecer totalmente oculta durante todo el proceso.
+  - El archivo principal para los revisores **NO** debe contener nombres, filiaciones, agradecimientos ni menciones a repositorios que identifiquen a los autores.
+  - Toda la información de autoría se envía en una **Página de Título separada (Title Page)** para uso exclusivo del Editor.
 - **Sección en OJS:** **Regular Research Paper**.
-- **Cobra APC (Article Processing Charges)?:** **NO ($0 USD)**. Publicación 100% gratuita y de acceso abierto diamante (*"JGED does not have Article Processing Charges nor article submission charges"*).
+- **Cobra APC (Article Processing Charges)?:** **NO ($0 USD)**. Publicación 100% gratuita y de acceso abierto diamante (*"JGED does not have Article Processing Charges nor article submission charges"*). Evidencia en `JOURNAL.md`.
+- **Formato:** JGED exige entrega en formato Microsoft Word (`.docx`), complementada con el PDF. Límite máximo de 12 páginas A4 (nuestro manuscrito cuenta con 10 páginas).
 
 ---
 
@@ -34,16 +41,16 @@ Color contrast, Chromatic accessibility, WCAG 2.2, CIELAB color space, Web acces
 
 ---
 
-## 3. Autores y Filiación Institucional Oficial (Orden Estricto para Title Page y OJS)
-1. **Juan Pablo Aviles-Esparza** (*Autor de correspondencia*)
+## 3. Autores y Filiación Institucional Oficial (para Title Page y Formulario OJS)
+1. **Juan Pablo Aviles-Esparza** (*Primer Autor y Autor de Correspondencia*)
    - *Filiación:* Facultad de Informática y Electrónica, Escuela Superior Politécnica de Chimborazo (ESPOCH), Panamericana Sur km 1 1/2, Riobamba EC060155, Ecuador.
    - *Correo electrónico:* `juan.aviles@espoch.edu.ec`
    - *ORCID:* [0009-0007-0058-8069](https://orcid.org/0009-0007-0058-8069)
-2. **Italo Javier Tenempaguay-Granizo**
+2. **Italo Javier Tenempaguay-Granizo** (*Coautor*)
    - *Filiación:* Facultad de Informática y Electrónica, Escuela Superior Politécnica de Chimborazo (ESPOCH), Panamericana Sur km 1 1/2, Riobamba EC060155, Ecuador.
    - *Correo electrónico:* `italo.tenempaguay@espoch.edu.ec`
    - *ORCID:* [0009-0001-5753-4279](https://orcid.org/0009-0001-5753-4279)
-3. **Isaac David Torres-Paredes**
+3. **Isaac David Torres-Paredes** (*Coautor y Tutor Académico*)
    - *Filiación:* Facultad de Informática y Electrónica, Escuela Superior Politécnica de Chimborazo (ESPOCH), Panamericana Sur km 1 1/2, Riobamba EC060155, Ecuador.
    - *Correo electrónico:* `isaac.torres@espoch.edu.ec`
    - *ORCID:* [0009-0001-7057-9316](https://orcid.org/0009-0001-7057-9316)
@@ -52,13 +59,13 @@ Color contrast, Chromatic accessibility, WCAG 2.2, CIELAB color space, Web acces
 
 ## 4. Archivos a Subir en la Plataforma OJS (Protocolo Doble Ciego)
 - **Paso 2 de OJS (Upload Submission / Manuscrito para Evaluadores - ANONIMIZADO):**
-  - Subir: [`paper/P2_JGED_manuscript.docx`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript.docx) (Word oficial formateado según la plantilla de JGED, 10 páginas A4, sin nombres de autor) o el PDF anonimizado [`paper/P2_JGED_manuscript_blinded.pdf`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript_blinded.pdf).
+  - Subir: `P2_JGED_manuscript.docx` (documento Word oficial formateado bajo la plantilla JGED, 10 páginas A4, sin datos de autoría) y/o el PDF anonimizado `P2_JGED_manuscript_blinded.pdf`.
 - **Paso 4 de OJS (Upload Supplementary Files / Archivos para el Editor):**
-  1. **Title Page separada (con datos de autoría):** [`paper/Title_Page_JGED.docx`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/Title_Page_JGED.docx) y [`paper/Title_Page_JGED.pdf`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/Title_Page_JGED.pdf).
-  2. `paper/cover_letter.md` (Carta formal dirigida al Editor en Jefe Prof. Dr. Nemanja Kašiković).
-  3. `paper/declaraciones.md` (Declaraciones de autoría CRediT, ética COPE de uso de IA, disponibilidad de datos en Zenodo y ausencia de conflictos).
-  4. Manuscrito identificado completo (para archivo editorial): [`paper/P2_JGED_manuscript.pdf`](file:///c:/Users/Juan/Desktop/PAPERS/02-jged-contraste-cromatico/paper/P2_JGED_manuscript.pdf).
-  5. Paquete comprimido con fuentes completas: [`paquetes_envio/P02_JGED_paquete_envio.zip`](file:///c:/Users/Juan/Desktop/PAPERS/paquetes_envio/P02_JGED_paquete_envio.zip) (contiene `main.tex`, `main_blinded.tex`, `refs.bib`, subcarpeta `figures/` con las 8 figuras vectoriales y raster de 300 DPI, documentos Word y PDF, cartas y declaraciones).
+  1. **Title Page separada (con datos completos de autoría):** `Title_Page_JGED.docx` y `Title_Page_JGED.pdf`.
+  2. `cover_letter.md` (Carta formal dirigida al Editor en Jefe Prof. Dr. Nemanja Kašiković).
+  3. `declaraciones.md` (Declaraciones de autoría CRediT, ética COPE de uso de IA, disponibilidad de datos en Zenodo y ausencia de conflictos).
+  4. Manuscrito identificado completo (para archivo editorial): `P2_JGED_manuscript.pdf`.
+  5. `P02_JGED_paquete_envio.zip` (Paquete comprimido con fuentes completas LaTeX: `main.tex`, `main_blinded.tex`, `refs.bib`, subcarpeta `figures/` con las 8 figuras vectoriales/raster 300 DPI, `README.md`).
 
 ---
 
@@ -80,16 +87,19 @@ Color contrast, Chromatic accessibility, WCAG 2.2, CIELAB color space, Web acces
 
 ## 6. Enlaces de Reproducibilidad y Datos Abiertos
 - **Repositorio público en GitHub:** [https://github.com/JuanAvilesP3/jged-contraste-cromatico.git](https://github.com/JuanAvilesP3/jged-contraste-cromatico.git)
-- **Depósito de datos y código en Zenodo:** [https://doi.org/10.5281/zenodo.22907770](https://doi.org/10.5281/zenodo.22907770) (DOI: `10.5281/zenodo.22907770`).
+- **Depósito permanente en Zenodo:** [https://doi.org/10.5281/zenodo.22907770](https://doi.org/10.5281/zenodo.22907770) (DOI: `10.5281/zenodo.22907770`).
 
 ---
 
-## 7. Lista de Chequeo Previa al Envío (Checklist)
+## 7. Lista de Chequeo Previa al Envío (Directrices FIE-ESPOCH 2026)
 - [x] Manuscrito de evaluación anonimizado sin nombres, correos ni filiaciones (versión `blinded`).
 - [x] Página de título (*Title Page*) preparada por separado con la totalidad de los datos de autoría para el editor.
-- [x] Manuscrito compilado a 10 páginas A4 (límite máximo permitido en JGED es de 12 páginas).
+- [x] Manuscrito ajustado a 10 páginas A4 (dentro del límite máximo de 12 páginas de JGED).
 - [x] Estilo de citación autor-año Harvard estricto verificado en `refs.bib`.
-- [x] Figuras vectoriales de alta resolución alojadas en la subcarpeta `figures/` e insertadas como `figures/figX...`.
-- [x] Incorporación del algoritmo de composición alfa W3C ($C_{	ext{eff}} = 	ext{round}(lpha C + (1-lpha) 255)$) en el preprocesamiento de color.
-- [x] 2 citas locales a artículos de JGED (*Abd El-Rahman et al. 2021, Aydemir et al. 2021*).
-- [x] Filiación institucional corregida con acentuación oficial LaTeX (`Polit'ecnica`).
+- [x] 8 figuras de alta resolución alojadas en la subcarpeta `figures/` e insertadas como `figures/figX...`.
+- [x] Ninguna figura generada con IA de imágenes.
+- [x] Implementación rigurosa del algoritmo de composición alfa W3C ($C_{\text{eff}} = \text{round}(\alpha C + (1-\alpha) 255)$) en el preprocesamiento de color.
+- [x] Resolución dinámica y portable del motor `axe-core` en `src/02_preprocess.py`.
+- [x] 2 citas locales a artículos de JGED incorporadas (*Abd El-Rahman et al. 2021, Aydemir et al. 2021*).
+- [x] Filiación institucional corregida con acentuación oficial LaTeX (`Polit\'ecnica`).
+- [x] Exclusividad estricta de envío garantizada.
