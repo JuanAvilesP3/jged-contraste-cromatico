@@ -87,7 +87,7 @@ Color contrast, Chromatic accessibility, WCAG 2.2, CIELAB color space, Web acces
 
 ## 6. Enlaces de Reproducibilidad y Datos Abiertos
 - **Repositorio público en GitHub:** [https://github.com/JuanAvilesP3/jged-contraste-cromatico.git](https://github.com/JuanAvilesP3/jged-contraste-cromatico.git)
-- **Depósito permanente en Zenodo:** [https://doi.org/10.5281/zenodo.22907770](https://doi.org/10.5281/zenodo.22907770) (DOI: `10.5281/zenodo.22907770`).
+- **Depósito permanente en Zenodo:** [https://doi.org/10.5281/zenodo.23005763](https://doi.org/10.5281/zenodo.23005763) (DOI: `10.5281/zenodo.23005763`).
 
 ---
 
