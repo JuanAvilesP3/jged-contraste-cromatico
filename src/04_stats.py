@@ -50,6 +50,10 @@ def main():
     print(f"chi2={chi2:.2f}  dof={dof}  p={p:.6f}  V de Cramér={v:.3f}")
     print(f"(países incluidos, >=30 pares: {list(valid_countries)})")
     contingency.to_csv(RESULTS_DIR / "tabla_contingencia_pais.csv")
+    pd.DataFrame([{
+        "nivel": "par", "chi2": chi2, "dof": dof, "p": p, "cramers_v": v,
+        "n_pares": int(contingency.values.sum()), "n_paises": contingency.shape[0],
+    }]).to_csv(RESULTS_DIR / "chi2_pares_pais.csv", index=False)
 
     # --- Regresion logistica ---
     reg_df = sub.copy()

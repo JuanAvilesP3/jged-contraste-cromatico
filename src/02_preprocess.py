@@ -36,8 +36,8 @@ PROC_DIR = Path(__file__).resolve().parent.parent / "data" / "processed"
 # Resolucion portable de axe-core (local o global npm)
 candidate_axe_paths = [
     Path(__file__).resolve().parent.parent / "node_modules" / "axe-core" / "axe.min.js",
+    Path(os.environ.get("AXE_CORE_PATH", "axe.min.js")),
     Path(os.environ.get("APPDATA", "")) / "npm" / "node_modules" / "axe-core" / "axe.min.js",
-    Path("C:/Users/Juan/AppData/Roaming/npm/node_modules/axe-core/axe.min.js"),
     Path("/usr/local/lib/node_modules/axe-core/axe.min.js"),
 ]
 AXE_JS_PATH = next((p for p in candidate_axe_paths if p.exists()), candidate_axe_paths[0])
