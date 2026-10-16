@@ -62,7 +62,12 @@ def main():
         pct_falla_aa=("clasificacion", lambda s: (s == "falla").mean() * 100),
         tiene_fallo_critico=("clasificacion", lambda s: (s == "falla").any()),
     ).reset_index()
+    # axe_results.csv puede tener mas de una corrida por sitio (p. ej. una vacia 0/0 y otra valida).
+    # Se conserva la corrida con mas elementos evaluados; sin esto el sitio se duplicaba en el agregado.
+    axe = (axe.assign(_n=axe["axe_color_contrast_violations"] + axe["axe_color_contrast_passes"])
+              .sort_values("_n").drop_duplicates("site_id", keep="last").drop(columns="_n"))
     agg = agg.merge(axe, on="site_id", how="left")
+    assert agg["site_id"].is_unique, "sitio duplicado en el agregado"
 
     print(f"\n% de sitios con al menos un fallo crítico: {agg['tiene_fallo_critico'].mean()*100:.1f}%")
     print(f"Mediana de % de fallas AA por sitio: {agg['pct_falla_aa'].median():.1f}%")
@@ -75,6 +80,8 @@ def main():
         corr = valid["pct_falla_aa"].corr(valid["axe_color_contrast_violations"] /
                                             (valid["axe_color_contrast_violations"] + valid["axe_color_contrast_passes"]) * 100)
         print(f"\nCorrelación entre % fallas propio y % violaciones axe-core: {corr:.3f}")
+        pd.DataFrame([{"r_pearson_pct_falla_vs_pct_violaciones_axe": corr, "n_sitios": int(valid["pct_falla_aa"].notna().sum())}]
+                     ).to_csv(RESULTS_DIR / "correlacion_axe.csv", index=False)
 
     print(f"\nCompletado: {RESULTS_DIR}")
 

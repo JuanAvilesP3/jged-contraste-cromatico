@@ -113,6 +113,39 @@ def fig4_capturas_ejemplo(agg):
     plt.close(fig)
 
 
+def fig4_pares_frecuentes():
+    """Fig. 4: muestras renderizadas de los pares de colores que mas fallan (Tabla 3, top10_pares_frecuentes.csv).
+
+    Reemplaza al panel de capturas (fig4_capturas_ejemplo): el desenfoque necesario para anonimizar las
+    portadas tapaba justamente el texto con falla, y una captura dejaba visible el nombre de una institucion.
+    Aqui se muestran los colores medidos tal cual, sin identificar a ningun sitio. Se omiten los pares
+    blanco-sobre-blanco/gris muy claro (texto invisible, ratio < 1.2) porque no hay nada que mostrar.
+    """
+    from matplotlib.patches import Rectangle
+    top = pd.read_csv(RESULTS_DIR / "top10_pares_frecuentes.csv")
+    top = top[top["ratio_mediano"] >= 1.2].head(6).reset_index(drop=True)
+
+    def hexc(rgb):
+        r, g, b = [int(v) for v in rgb.strip("rgb() ").split(",")]
+        return "#{:02X}{:02X}{:02X}".format(r, g, b)
+
+    fig, axes = plt.subplots(3, 2, figsize=(7.16, 5.4))
+    for ax, (_, row) in zip(axes.flat, top.iterrows()):
+        fg, bg = hexc(row["text_color"]), hexc(row["bg_color"])
+        ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
+        ax.add_patch(Rectangle((0, 0.38), 1, 0.62, facecolor=bg, edgecolor="#000000", linewidth=0.6))
+        ax.text(0.04, 0.80, "Admissions", color=fg, fontsize=12, fontweight="bold", family="sans-serif", va="center")
+        ax.text(0.04, 0.55, "Programmes · Research · News", color=fg, fontsize=9, family="sans-serif", va="center")
+        ax.text(0.0, 0.20, f"{fg} on {bg}   ratio {row['ratio_mediano']:.2f}:1   n = {int(row['n'])}",
+                color="#000000", fontsize=8, va="center")
+        ax.text(0.0, 0.04, "fails AA for body text (needs 4.5:1)" + ("; also fails for large text (3:1)" if row["ratio_mediano"] < 3 else ""),
+                color="#000000", fontsize=7.5, style="italic", va="center")
+    fig.tight_layout()
+    save_figure(fig, FIG_DIR / "fig4_pares_frecuentes")
+    save_figure(fig, PAPER_FIG_DIR / "fig4_pares_frecuentes")
+    plt.close(fig)
+
+
 def main():
     apply_style()
     FIG_DIR.mkdir(parents=True, exist_ok=True)
@@ -127,7 +160,7 @@ def main():
     print("Fig. 2 lista")
     fig3_dispersion_cielab(fallidos)
     print("Fig. 3 lista")
-    fig4_capturas_ejemplo(agg)
+    fig4_pares_frecuentes()
     print("Fig. 4 lista")
 
     print(f"\nCompletado: 4 figuras guardadas en {FIG_DIR}")

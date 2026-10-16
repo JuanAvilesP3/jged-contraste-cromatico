@@ -21,7 +21,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
-from scipy.stats import chi2_contingency
+from scipy.stats import chi2_contingency, kruskal
 from sklearn.cluster import KMeans
 
 RESULTS_DIR = Path(__file__).resolve().parent.parent / "results" / "tables"
@@ -208,6 +208,14 @@ def main():
         "celda_esperada_minima": min_expected,
         "n_permutaciones": n_perm, "p_permutacion": p_perm,
     }]).to_csv(RESULTS_DIR / "chi2_sitio_pais.csv", index=False)
+
+    # Kruskal-Wallis sobre el % de pares que fallan AA por sitio (mismo subconjunto de paises).
+    # Citado en el manuscrito; antes se corria fuera del pipeline y no quedaba en results/.
+    grupos = [g["pct_falla_aa"].values for _, g in sitio_valido.groupby("country")]
+    h_kw, p_kw = kruskal(*grupos)
+    print(f"Kruskal-Wallis %falla AA por sitio ~ pais: H={h_kw:.2f} p={p_kw:.4f}")
+    pd.DataFrame([{"n_sitios": len(sitio_valido), "n_paises": len(grupos), "H": h_kw, "p": p_kw}]
+                 ).to_csv(RESULTS_DIR / "kruskal_sitio_pais.csv", index=False)
 
     print(f"\nCompletado: {RESULTS_DIR}")
 

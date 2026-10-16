@@ -20,6 +20,10 @@ RAW_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
 SOURCE_JSON = RAW_DIR / "world_universities_and_domains.json"
 OUTPUT_CSV = RAW_DIR / "dominios_universidades.csv"
 
+# NOTA (auditoria 16/10/2026): world_universities_and_domains.json registra a Bolivia y Venezuela como
+# "Bolivia, Plurinational State of" y "Venezuela, Bolivarian Republic of", asi que "Bolivia" y "Venezuela"
+# no coinciden y ambos paises quedaron fuera de la muestra (17 de 19 paises). Se deja tal cual para que la
+# muestra publicada sea reproducible; el manuscrito lo declara en Metodologia y Limitaciones.
 LATAM_COUNTRIES = [
     "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Costa Rica",
     "Cuba", "Dominican Republic", "Ecuador", "El Salvador", "Guatemala",
