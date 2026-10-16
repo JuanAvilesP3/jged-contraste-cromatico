@@ -20,11 +20,11 @@ ANON_AUTHORS = (
 )
 SECTIONS = {
     "Data Availability": (
-        "The domain list, crawl logs, extracted color pairs, and analysis code are permanently archived "
+        "The domain list, crawl logs, extracted colour pairs, and analysis code are permanently archived "
         "in a public repository with a persistent DOI. The identifier and repository URL are withheld "
         "during double-blind review and will be added upon acceptance."
     ),
-    "Funding": "This research received no external funding.",
+    "Funding": "This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.",
     "Author Contributions": "\\textit{Author contribution statements omitted for double-blind peer review.}",
 }
 

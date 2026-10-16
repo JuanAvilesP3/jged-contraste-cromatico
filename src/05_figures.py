@@ -38,7 +38,7 @@ def fig1_histograma(df):
         ax.axvline(thresh, color=COLORS["primary"], linestyle="--", linewidth=1.2)
         ax.text(thresh, ax.get_ylim()[1] * 0.95, label, rotation=90, va="top", ha="right", fontsize=8, color=COLORS["primary"])
     ax.set_xlabel("WCAG Contrast Ratio")
-    ax.set_ylabel("Number of Color Pairs")
+    ax.set_ylabel("Number of Colour Pairs")
     save_figure(fig, FIG_DIR / "fig1_histograma_contraste")
     save_figure(fig, PAPER_FIG_DIR / "fig1_histograma_contraste")
     plt.close(fig)
