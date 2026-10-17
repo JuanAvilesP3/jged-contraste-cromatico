@@ -66,7 +66,7 @@ def main():
     with open(RESULTS_DIR / "regresion_logistica_resumen.txt", "w", encoding="utf-8") as f:
         f.write(str(model.summary()))
 
-    # --- Robustez (corregido tras revision interna): la logistica de
+    # --- Robustez (corregido en la revision interna): la logistica de
     # arriba trata los 41,360 pares como independientes, pero pares del
     # mismo sitio comparten un sistema de diseño y no lo son. Se repite
     # el mismo modelo via GEE con errores estandar robustos (sandwich)
@@ -119,7 +119,7 @@ def main():
     or_table.to_csv(RESULTS_DIR / "odds_ratios.csv")
 
     # --- Agrupamiento CIELAB de los pares fallidos (color de texto) ---
-    # Corregido tras revision interna (ronda 2): agrupar solo en el
+    # Correccion: agrupar solo en el
     # plano a*b* es casi circular, porque WCAG falla por LUMINANCIA
     # relativa y a*b* descarta L*, la variable que gobierna el fallo.
     # Cualquier color acromatico (negro, gris, blanco) colapsa al origen
@@ -167,7 +167,7 @@ def main():
     stats_por_cluster.to_csv(RESULTS_DIR / "cluster_summary.csv")
 
     # --- Chi-cuadrado a nivel de SITIO: pais x tiene-al-menos-un-fallo ---
-    # Corregido tras revision interna (ronda 2): esta prueba (256
+    # Correccion: esta prueba (256
     # sitios, p=0.085, citada en el manuscrito) se habia corrido antes
     # de forma ad hoc y nunca quedo en un script versionado -- mismo
     # patron de bug que el ANOVA de P6. Se reconstruye aqui de forma

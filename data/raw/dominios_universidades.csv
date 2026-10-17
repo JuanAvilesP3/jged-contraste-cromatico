@@ -1,0 +1,465 @@
+id,name,country,domain,web_page
+U0001,Universidade Estadual do Maranhão,Brazil,uema.br,http://www.uema.br/
+U0002,Universidad Champagnat,Argentina,uch.edu.ar,http://www.uch.edu.ar/
+U0003,Universidad José Cecilio del Valle,Honduras,ujcv.edu.hn,http://www.ujcv.edu.hn/
+U0004,Universidad San Carlos,Paraguay,sancarlos.edu.py,https://www.sancarlos.edu.py/
+U0005,Universidad Tecnológica de Panamá,Panama,utp.ac.pa,http://www.utp.ac.pa/
+U0006,Universidad Nacional Autonoma de Nicaragua,Nicaragua,unan.edu.ni,http://www.unan.edu.ni/
+U0007,Universidad del Istmo,Panama,udi.edu,http://www.udi.edu/
+U0008,Universidad Técnica de Babahoyo,Ecuador,utb.edu.ec,http://www.utb.edu.ec/
+U0009,Universidad Nacional de Chilecito,Argentina,undec.edu.ar,https://www.undec.edu.ar/
+U0010,Universidad del Caribe,Dominican Republic,unicaribe.edu.do,http://www.unicaribe.edu.do/
+U0011,Universidad Alberto Hurtado,Chile,uahurtado.cl,http://www.uahurtado.cl/
+U0012,Universidad Autónoma del Paraguay,Paraguay,uap.edu.py,http://www.uap.edu.py/
+U0013,Universidad Central del Ecuador,Ecuador,ucentral.edu.ec,http://www.ucentral.edu.ec/
+U0014,Universidad de Hermosillo,Mexico,udeh.edu.mx,http://www.udeh.edu.mx/
+U0015,Universidad de Oriente,Cuba,uo.edu.cu,http://www.uo.edu.cu/
+U0016,Universidad del Istmo,Guatemala,unis.edu.gt,http://www.unis.edu.gt/
+U0017,Universidad Hispanoamericana,Nicaragua,uhispam.edu.ni,http://www.uhispam.edu.ni/
+U0018,Instituto de Enseñanza Superior del Ejército,Argentina,iese.edu.ar,http://www.iese.edu.ar/
+U0019,Universidad Católica Anselmo Llorente,Costa Rica,ucatolica.ac.cr,http://www.ucatolica.ac.cr/
+U0020,Centro Universitario de Occidente,Guatemala,cunoc.edu.gt,http://www.cunoc.edu.gt/
+U0021,Universidad Técnica Federico Santa María,Chile,usm.cl,https://usm.cl/
+U0022,Universidade Estadual do Piauí,Brazil,uespi.br,http://www.uespi.br/
+U0023,Universidad Catolica de Azogues,Ecuador,ucaazo.edu.ec,http://www.ucaazo.edu.ec/
+U0024,Universidade do Estado do Rio Grande do Norte,Brazil,uern.br,http://www.uern.br/
+U0025,Universidad de Panamá,Panama,up.ac.pa,http://www.up.ac.pa/
+U0026,Universidad Técnica de Manabí,Ecuador,utm.edu.ec,http://www.utm.edu.ec/
+U0027,Universidad Escuela Argentina de Negocios,Argentina,uean.edu.ar,https://uean.edu.ar/
+U0028,Universidad San Marcos,Costa Rica,usam.ac.cr,http://www.usam.ac.cr/
+U0029,Escuela Agricola Panamericana Zamorano,Honduras,zamorano.edu,http://www.zamorano.edu/
+U0030,Universidad Católica de Honduras,Honduras,unicah.edu,http://www.unicah.edu/
+U0031,Universidad Nacional de Chimborazo,Ecuador,unach.edu.ec,http://www.unach.edu.ec/
+U0032,Universidad Metropolitana de Asunción,Paraguay,uma.edu.py,http://www.uma.edu.py/
+U0033,Centro Universitário Facens - UniFACENS,Brazil,facens.br,https://facens.br/
+U0034,Universidad EAFIT,Colombia,eafit.edu.co,http://www.eafit.edu.co/
+U0035,Universidade do Estado do Rio de Janeiro,Brazil,uerj.br,http://www.uerj.br/
+U0036,Universidad Nacional de Loja,Ecuador,unl.edu.ec,http://www.unl.edu.ec/
+U0037,Universidad Católica Tecnológica del Cibao,Dominican Republic,ucateci.edu.do,http://www.ucateci.edu.do/
+U0038,Universidad Abierta y a Distancia de Panama,Panama,unadp.ac.pa,http://www.unadp.ac.pa/
+U0039,Universidad Técnica Latinoamericana,El Salvador,utla.edu.sv,http://www.utla.edu.sv/
+U0040,Insituto Universitario - Centro Latinoamericano de Economia Humana - IU Claeh,Uruguay,claeh.edu.uy,http://www.claeh.edu.uy/
+U0041,Universidad San Juan de la Cruz,Costa Rica,sjdlc.com,http://www.sjdlc.com/
+U0042,Universidad Luterana Salvadorena,El Salvador,uls.edu.sv,https://uls.edu.sv/
+U0043,Universidad Politécnica Salesiana,Ecuador,ups.edu.ec,http://www.ups.edu.ec/
+U0044,Centro Universitário Claretiano,Brazil,claretiano.edu.br,http://www.claretiano.edu.br/
+U0045,Victoria International University,Panama,viu.edu.pa,http://www.viu.edu.pa/
+U0046,Universidad de Iberoamérica,Costa Rica,unibe.ac.cr,http://www.unibe.ac.cr/
+U0047,Universidad Católica Santa María La Antigua,Panama,usma.ac.pa,http://www.usma.ac.pa/
+U0048,Universidad de Concepcion,Chile,udec.cl,http://www.udec.cl/
+U0049,Universidad de Cartago,Panama,ucapanama.org,http://www.ucapanama.org/
+U0050,Universidad de Huánuco,Peru,udh.edu.pe,http://www.udh.edu.pe/
+U0051,Universidad Nacional del Este,Paraguay,une.edu.py,http://www.une.edu.py/
+U0052,Universidad Iberoamericana,Dominican Republic,unibe.edu.do,http://www.unibe.edu.do/
+U0053,Universidad Popular Autonóma del Estado de Puebla,Mexico,upaep.mx,http://www.upaep.mx/
+U0054,Universidad de Cienfuegos,Cuba,ucf.edu.cu,http://www.ucf.edu.cu/
+U0055,Universidad de San Buenaventura,Colombia,usb.edu.co,http://www.usb.edu.co/
+U0056,Universidad de Holguín,Cuba,uho.edu.cu,http://www.uho.edu.cu/
+U0057,"Universidad Autónoma ""Benito Juárez"" de Oaxaca",Mexico,uabjo.mx,http://www.uabjo.mx/
+U0058,Universidad Centroamericana de Ciencias Empresariales (UCEM),Nicaragua,ucem.edu.ni,http://www.ucem.edu.ni/
+U0059,Universidad Tecnológica de Honduras,Honduras,uth.hn,http://www.uth.hn/
+U0060,Universidad Privada Antenor Orrego,Peru,upao.edu.pe,http://www.upao.edu.pe/
+U0061,Universidad de San Pedro Sula,Honduras,usps.edu.hn,http://www.usps.edu.hn/
+U0062,Universidad Católica de Santiago de Guayaquil,Ecuador,ucsg.edu.ec,http://www.ucsg.edu.ec/
+U0063,Universidad Centroamericana,Nicaragua,uca.edu.ni,http://www.uca.edu.ni/
+U0064,Universidad Nacional José Faustino Sánchez Carrión,Peru,unjfsc.edu.pe,http://www.unjfsc.edu.pe/
+U0065,Instituto Tecnológico de Costa Rica,Costa Rica,itcr.ac.cr,http://www.itcr.ac.cr/
+U0066,Universidad Agroforestal Fernando A.Meriño,Dominican Republic,uafam.edu.do,http://www.uafam.edu.do/
+U0067,Universidad Isaac Newton,Costa Rica,isaacnewtoncr.com,http://www.isaacnewtoncr.com/
+U0068,Universidad Santa María Campus Guayaquil,Ecuador,usm.edu.ec,http://www.usm.edu.ec/
+U0069,Universidad Anáhuac,Mexico,anahuac.mx,http://www.anahuac.mx/
+U0070,Universidad del Cono Sur de las Américas,Paraguay,ucsa.edu.py,http://www.ucsa.edu.py/
+U0071,"Universidad Pedagógica Nacional ""Francisco Morazán""",Honduras,upnfm.edu.hn,http://www.upnfm.edu.hn/
+U0072,Universidad Nacional de Ingenieria,Nicaragua,uni.edu.ni,http://www.uni.edu.ni/
+U0073,Universidad Internacional de las Américas,Costa Rica,uia.ac.cr,http://www.uia.ac.cr/
+U0074,Universidade de Guarulhos,Brazil,ung.br,http://www.ung.br/
+U0075,Universidad Privada San Juan Bautista,Peru,upsjb.edu.pe,http://www.upsjb.edu.pe/
+U0076,Universidad Nacional de Ingeniería,Peru,uni.edu.pe,http://www.uni.edu.pe/
+U0077,Universidad de las Regiones Autónomas de la Costa Caribe Nicaragüense,Nicaragua,uraccan.edu.ni,http://www.uraccan.edu.ni/
+U0078,Universidad de la Cuenca del Plata,Argentina,ucp.edu.ar,http://www.ucp.edu.ar/
+U0079,Fundación Universitaria Manuela Beltrán,Colombia,umb.edu.co,http://www.umb.edu.co/
+U0080,Universidad Pedagógica de El Salvador,El Salvador,universidadpedagogica.com,http://www.universidadpedagogica.com/
+U0081,Centro Universitario Ciudad Vieja,Guatemala,cucv.edu.gt,http://www.cucv.edu.gt/
+U0082,Universidad Internacional SEK,Ecuador,sek.edu,http://www.sek.edu/
+U0083,Universidad Adventista de Centro América,Costa Rica,unadeca.ac.cr,http://www.unadeca.ac.cr/
+U0084,Universidad Tecnológica de El Salvador,El Salvador,utec.edu.sv,http://www.utec.edu.sv/
+U0085,Universidad Tecnológica Oteima,Panama,oteima.ac.pa,http://www.oteima.ac.pa/
+U0086,Universidad del Valle de Atemajac,Mexico,univa.mx,http://www.univa.mx/
+U0087,Universidade Católica de Pernambuco,Brazil,unicap.br,http://www.unicap.br/
+U0088,Universidad Maimónides,Argentina,maimonides.edu.ar,http://www.maimonides.edu.ar/
+U0089,Universidad de Playa Ancha de Ciencias de la Educacion,Chile,upa.cl,http://www.upa.cl/
+U0090,Universidade do Rio de Janeiro,Brazil,unirio.br,http://www.unirio.br/
+U0091,Universidad Bernardo O'Higgins,Chile,ubohiggins.cl,http://www.ubohiggins.cl/
+U0092,Universidad de la República,Uruguay,universidad.edu.uy,http://www.universidad.edu.uy/
+U0093,Universidad Albert Einstein,El Salvador,uae.edu.sv,http://www.uae.edu.sv/
+U0094,Universidad Central del Este,Dominican Republic,uce.edu.do,http://www.uce.edu.do/
+U0095,Politécnico de Guanajuato,Mexico,poligto.edu.mx,http://www.poligto.edu.mx/
+U0096,Universidad Metropolitana,Colombia,unimetro.edu.co,http://www.unimetro.edu.co/
+U0097,Universidad Odontológica Dominicana,Dominican Republic,uod.edu.do,http://www.uod.edu.do/
+U0098,Universidad Don Bosco,El Salvador,cdb.edu.sv,http://www.cdb.edu.sv/
+U0099,Universidad Interamericana de Educacion a Distancia de Panama,Panama,uniedpa.com,http://www.uniedpa.com/
+U0100,Universidad Latinoamericana de Ciencia y Tecnología,Costa Rica,ulacit.ac.cr,http://www.ulacit.ac.cr/
+U0101,Universidad de Los Andes,Chile,uandes.cl,http://www.uandes.cl/
+U0102,Universidad Abierta Para Adultos,Dominican Republic,uapa.edu.do,http://www.uapa.edu.do/
+U0103,Universidad Norbert Wiener,Peru,uwiener.edu.pe,http://www.uwiener.edu.pe/
+U0104,Universidad Latina de Costa Rica,Costa Rica,ulatina.ac.cr,http://www.ulatina.ac.cr/
+U0105,Universidad Mariano Gálvez,Guatemala,umg.edu.gt,http://www.umg.edu.gt/
+U0106,Universidade Estadual do Vale do Acaraú,Brazil,uvanet.br,http://www.uvanet.br/
+U0107,Universidad Tecnológica del Peru,Peru,utp.edu.pe,http://www.utp.edu.pe/
+U0108,Universidad Privada de Tacna,Peru,upt.edu.pe,http://www.upt.edu.pe/
+U0109,Universidad Popular de Nicaragua (UPONIC),Nicaragua,uponic.edu.ni,http://www.uponic.edu.ni/
+U0110,West Coast University (WCU),Panama,westcoastuniversity-edu.com,http://www.westcoastuniversity-edu.com/
+U0111,Universidad Nacional de Tres de Febrero,Argentina,untref.edu.ar,http://www.untref.edu.ar/
+U0112,Universidad del CEMA,Argentina,ucema.edu.ar,https://ucema.edu.ar/
+U0113,Universidad de Costa Rica,Costa Rica,ucr.ac.cr,http://www.ucr.ac.cr/
+U0114,Universidad de Aconcagua,Chile,uaconcagua.cl,http://www.uaconcagua.cl/
+U0115,Universidad Nacional Pedro Henríquez Ureña,Dominican Republic,unphu.edu.do,http://www.unphu.edu.do/
+U0116,Universidad Capitain General Gerardo Barrios,El Salvador,ugb.edu.sv,http://www.ugb.edu.sv/
+U0117,Universidad Galileo,Guatemala,galileo.edu,http://www.galileo.edu/
+U0118,Instituto Tecnologico de Minatitlan,Mexico,itmina.edu.mx,http://www.itmina.edu.mx/
+U0119,Instituto Superior Politécnico José Antonio Echeverría,Cuba,cujae.edu.cu,http://www.cujae.edu.cu/
+U0120,"Instituto Superior Minero Metalúrgico ""Dr. Antonio Núñez Jiménez""",Cuba,ismm.edu.cu,http://www.ismm.edu.cu/
+U0121,Universidad de las Américas (ULAM),Nicaragua,ulam.edu.ni,http://www.ulam.edu.ni/
+U0122,Universidad la Concordia,Mexico,universidadlaconcordia.edu.mx,http://www.universidadlaconcordia.edu.mx/
+U0123,Universidad Católica de Santo Domingo,Dominican Republic,ucsd.edu.do,http://www.ucsd.edu.do/
+U0124,Universidad de Antofagasta,Chile,uantof.cl,http://www.uantof.cl/
+U0125,Universidad Rural de Guatemala,Guatemala,urural.edu.gt,http://www.urural.edu.gt/
+U0126,Universidad de Cartagena,Colombia,unicartagena.edu.co,http://www.unicartagena.edu.co/
+U0127,Universidade Castelo Branco,Brazil,castelobranco.br,http://www.castelobranco.br/
+U0128,"Universidad Técnica de Esmeraldas ""Luis Vargas Torres""",Ecuador,utelvt.edu.ec,http://www.utelvt.edu.ec/
+U0129,Universidad Tecnológica Centroamericana,Honduras,unitec.edu,http://www.unitec.edu/
+U0130,Universidad Francisco Gavidia,El Salvador,ufg.edu.sv,http://www.ufg.edu.sv/
+U0131,"Universidad Nacional de la Patagonia ""San Juan Bosco""",Argentina,unp.edu.ar,http://www.unp.edu.ar/
+U0132,Universidad de la Empresa (UDE),Uruguay,ude.edu.uy,http://www.ude.edu.uy/
+U0133,Universidade Anhembi Morumbi - UAM,Brazil,anhembi.br,https://portal.anhembi.br/
+U0134,Universidad Rafael Landívar,Guatemala,url.edu.gt,http://www.url.edu.gt/
+U0135,Universidad del Aconcagua,Argentina,uda.edu.ar,http://www.uda.edu.ar/
+U0136,Universidad Internacional del Ecuador,Ecuador,internacional.edu.ec,http://www.internacional.edu.ec/
+U0137,Universidad José Santos Ossa,Chile,ujso.cl,http://www.ujso.cl/
+U0138,Universidad del Valle de Guatemala,Guatemala,uvg.edu.gt,http://www.uvg.edu.gt/
+U0139,Universidad de Guanajuato,Mexico,ugto.mx,http://www.ugto.mx/
+U0140,"Universidad Salvadorena ""Alberto Masferrer""",El Salvador,usam.edu.sv,http://www.usam.edu.sv/
+U0141,Universidad Católica de Colombia,Colombia,ucatolica.edu.co,http://www.ucatolica.edu.co/
+U0142,Universidad Dr. Jose Matias Delgado,El Salvador,ujmd.edu.sv,http://www.ujmd.edu.sv/
+U0143,Universidad Cristiana de las Asambleas de Dios,El Salvador,ucad.edu.sv,http://www.ucad.edu.sv/
+U0144,Universidad Americana,Paraguay,uamericana.edu.py,http://www.uamericana.edu.py/
+U0145,"Universidad Catolica ""Redemptoris Mater""",Nicaragua,unica.edu.ni,http://www.unica.edu.ni/
+U0146,Universidad Empresarial,Costa Rica,unem.edu,http://www.unem.edu/
+U0147,Universidad del Pacifico,Peru,up.edu.pe,http://www.up.edu.pe/
+U0148,Universidad Braulio Carrillo,Costa Rica,universidadbrauliocarrillo.com,http://www.universidadbrauliocarrillo.com/
+U0149,Universidad de Tarapacá,Chile,uta.cl,http://www.uta.cl/
+U0150,Universidad Católica Nuestra Senora de la Asunción,Paraguay,uc.edu.py,http://www.uc.edu.py/
+U0151,Universidad Miguel de Cervantes,Chile,ucervantes.cl,http://www.ucervantes.cl/
+U0152,Escuela Politécnica de Chimborazo,Ecuador,espoch.edu,http://www.espoch.edu/
+U0153,Universidade Vale do Rio dos Sinos,Brazil,unisinos.br,http://www.unisinos.br/
+U0154,Universidad Iberoamericana de Ciencia y Tecnologia,Nicaragua,unicit.edu.ni,http://www.unicit.edu.ni/
+U0155,Universidad Católica del Uruguay,Uruguay,ucu.edu.uy,http://www.ucu.edu.uy/
+U0156,Universidad Central de Las Villas,Cuba,uclv.edu.cu,http://www.uclv.edu.cu/
+U0157,Universidad Catolica del Norte,Chile,ucn.cl,http://www.ucn.cl/
+U0158,Universidad Autonoma de Chiriqui,Panama,unachi.ac.pa,http://www.unachi.ac.pa/
+U0159,Universidad Catolica de Temuco,Chile,uctem.cl,http://www.uctem.cl/
+U0160,Universidad Eugenio Maria de Hostos,Dominican Republic,uniremhos.edu.do,http://www.uniremhos.edu.do/
+U0161,Universidad Ciencias Comerciales,Nicaragua,ucc.edu.ni,http://www.ucc.edu.ni/
+U0162,Centro de Investigación en Química Aplicada,Mexico,ciqa.edu.mx,https://ciqa.edu.mx/
+U0163,"Universidad Tecnologica ""Vicente Perez Rosales""",Chile,uvipro.cl,http://www.uvipro.cl/
+U0164,Universidad Panamericana,Guatemala,upana.edu.gt,http://www.upana.edu.gt/
+U0165,Universidad Autónoma de Zacatecas,Mexico,reduaz.mx,http://www.reduaz.mx/
+U0166,Universidad Nacional del Oeste,Argentina,uno.edu.ar,https://uno.edu.ar/
+U0167,Universidad de la Tercera Edad,Dominican Republic,ute.edu.do,http://www.ute.edu.do/
+U0168,Colegio Mayor de Antioquia,Colombia,colmayor.edu.co,https://www.colmayor.edu.co/
+U0169,Universidad Dr. Andreas Bello,El Salvador,unab.edu.sv,http://www.unab.edu.sv/
+U0170,Universidad de la Integración de las Americas (UNIDAD),Paraguay,unida.edu.py,http://www.unida.edu.py/
+U0171,"Universidad Latinoamericana de Ciencia y Tecnologia, Panamá",Panama,ulacit.ac.pa,http://www.ulacit.ac.pa/
+U0172,Universidad Nacional de Santa - Chimbote,Peru,uns.edu.pe,http://www.uns.edu.pe/
+U0173,Universidad Católica Popular del Risaralda,Colombia,ucpr.edu.co,http://www.ucpr.edu.co/
+U0174,Universidad Veracruzana,Mexico,uv.mx,http://www.uv.mx/
+U0175,"Universidad Pedagógica ""José Martí"", Camagüey",Cuba,ispcmw.rimed.cu,http://www.ispcmw.rimed.cu/
+U0176,Universidad Iberoamericana de Ciencias y Tecnologia,Chile,unicit.cl,http://www.unicit.cl/
+U0177,Universidad Católica de Santa María,Peru,ucsm.edu.pe,http://www.ucsm.edu.pe/
+U0178,Universidad Adventista del Plata,Argentina,uapar.edu,http://www.uapar.edu/
+U0179,Universidad Valle del Grijalva,Mexico,uvg1.net,http://www.uvg1.net/
+U0180,Universidad Técnica Particular de Loja,Ecuador,utpl.edu.ec,http://www.utpl.edu.ec/
+U0181,Universidad de Matanzas Camilo Cienfuegos,Cuba,umcc.cu,http://www.umcc.cu/
+U0182,Universidad de Camagüey,Cuba,reduc.edu.cu,http://www.reduc.edu.cu/
+U0183,Universidad Privada del Este,Paraguay,upe.edu.py,http://www.upe.edu.py/
+U0184,Universidad Cientifica del Sur,Peru,ucsur.edu.pe,http://www.ucsur.edu.pe/
+U0185,Universidad de Granma,Cuba,udg.co.cu,http://www.udg.co.cu/
+U0186,Universidad de Palermo,Argentina,palermo.edu,http://www.palermo.edu/
+U0187,Universidad Nacional del Sur,Argentina,uns.edu.ar,http://www.uns.edu.ar/
+U0188,Universidad de Medellín,Colombia,udem.edu.co,http://www.udem.edu.co/
+U0189,Universidad Nacional Mayor de San Marcos,Peru,unmsm.edu.pe,http://www.unmsm.edu.pe/
+U0190,Universidad Autónoma de Santa Ana,El Salvador,unasa.edu.sv,http://www.unasa.edu.sv/
+U0191,Insper Instituto de Ensino e Pesquisa,Brazil,insper.edu.br,https://www.insper.edu.br/
+U0192,Universidad Insurgentes Plantel León,Mexico,uileon.edu.mx,http://www.uileon.edu.mx/
+U0193,Universidad Fidélitas,Costa Rica,ufidelitas.ac.cr,http://www.ufidelitas.ac.cr/
+U0194,Universidad Autónoma de Asunción,Paraguay,uaa.edu.py,http://www.uaa.edu.py/
+U0195,Universidad de Oriente,El Salvador,univo.edu.sv,http://www.univo.edu.sv/
+U0196,Universidad Especializada de Las Americas,Panama,udelas.ac.pa,http://www.udelas.ac.pa/
+U0197,Universidad Nacional San Luis Gonzaga,Peru,unica.edu.pe,http://www.unica.edu.pe/
+U0198,Universidad de Pamplona,Colombia,unipamplona.edu.co,http://www.unipamplona.edu.co/
+U0199,Universidad CES,Colombia,ces.edu.co,http://www.ces.edu.co/
+U0200,Universidad Católica Nordestana,Dominican Republic,ucne.edu.do,http://www.ucne.edu.do/
+U0201,Universidad Católica del Oriente,Colombia,uco.edu.co,http://www.uco.edu.co/
+U0202,Universidad del Norte,Paraguay,uninorte.edu.py,http://www.uninorte.edu.py/
+U0203,Centro de Enseñanza Técnica Industrial,Mexico,ceti.mx,http://www.ceti.mx/
+U0204,Floret Global University,Panama,floret.edu.pa,http://www.floret.edu.pa/
+U0205,Universidad Internacional de Integración de América Latina,Nicaragua,unival.edu.ni,http://www.unival.edu.ni/
+U0206,Universidad ORT Uruguay,Uruguay,ort.edu.uy,http://www.ort.edu.uy/
+U0207,Universidad Comunera,Paraguay,ucom.edu.py,http://www.ucom.edu.py/
+U0208,Universidad del Noroeste,Mexico,uno.mx,http://www.uno.mx/
+U0209,Escuela Superiore de Administración Pública,Colombia,esap.edu.co,http://www.esap.edu.co/
+U0210,Escuela Colombiana de Carreras Industriales,Colombia,ecci.edu.co,http://www.ecci.edu.co/
+U0211,Universidad de La Habana,Cuba,uh.cu,http://www.uh.cu/
+U0212,Universidade Potiguar,Brazil,unp.br,http://www.unp.br/
+U0213,Universidad del Atlántico,Colombia,uniatlantico.edu.co,http://www.uniatlantico.edu.co/
+U0214,Columbus University,Panama,columbus.edu,http://www.columbus.edu/
+U0215,Universidad Metropolitana de Honduras,Honduras,unimetro.edu.hn,http://www.unimetro.edu.hn/
+U0216,Universidad Particular Inca Garcilaso de la Vega,Peru,uigv.edu.pe,http://www.uigv.edu.pe/
+U0217,Universidad Nacional Agraria,Nicaragua,una.edu.ni,http://www.una.edu.ni/
+U0218,Universidad Nicaragüense de Ciencia y Tecnológica,Nicaragua,ucyt.edu.ni,http://www.ucyt.edu.ni/
+U0219,"Universidad Centroamericana ""José Simeón Canas""",El Salvador,uca.edu.sv,http://www.uca.edu.sv/
+U0220,Universidad Adventista de Chile,Chile,unachile.cl,http://www.unachile.cl/
+U0221,Universidad Nacional Autónoma de Honduras,Honduras,unah.edu.hn,http://www.unah.edu.hn/
+U0222,Universidad Nacional Jorge Basadre Grohmann,Peru,unjbg.edu.pe,http://www.unjbg.edu.pe/
+U0223,Universidad del Salvador,Argentina,salvador.edu.ar,http://www.salvador.edu.ar/
+U0224,Universidad Autónoma de Las Américas,Colombia,uam.edu.co,http://www.uam.edu.co/
+U0225,Universidad de San Carlos de Guatemala,Guatemala,usac.edu.gt,http://www.usac.edu.gt/
+U0226,Universidad Evangélica de El Salvador,El Salvador,uees.edu.sv,http://www.uees.edu.sv/
+U0227,Universidad Francisco Marroquín,Guatemala,ufm.edu.gt,http://www.ufm.edu.gt/
+U0228,Universidad Federico Henríquez y Carvajal,Dominican Republic,ufhec.edu.do,http://www.ufhec.edu.do/
+U0229,Instituto Tecnológico de Santo Domingo,Dominican Republic,intec.edu.do,http://www.intec.edu.do/
+U0230,Pontificia Universidad Católica del Ecuador,Ecuador,puce.edu.ec,http://www.puce.edu.ec/
+U0231,Universidad de Ciego de Avila,Cuba,unica.cu,http://www.unica.cu/
+U0232,Universidad Latina de Panamá,Panama,ulat.ac.pa,http://www.ulat.ac.pa/
+U0233,Universidad Central,Costa Rica,universidadcentral.com,http://www.universidadcentral.com/
+U0234,Universidad Columbia del Paraguay,Paraguay,columbia.edu.py,http://www.columbia.edu.py/
+U0235,Universidad Nacional de Asunción,Paraguay,una.py,http://www.una.py/
+U0236,Universidad Andina Simón Bolívar,Ecuador,uasb.edu.ec,http://www.uasb.edu.ec/
+U0237,Universidad de Montevideo,Uruguay,um.edu.uy,http://www.um.edu.uy/
+U0238,Universidade de Marília,Brazil,unimar.br,http://www.unimar.br/
+U0239,Universidad de Managua (U de M),Nicaragua,udem.edu.ni,http://www.udem.edu.ni/
+U0240,Universidad para la Cooperación Internacional,Costa Rica,uci.ac.cr,http://www.uci.ac.cr/
+U0241,Universidad Católica Madre y Maestra,Dominican Republic,pucmm.edu.do,http://www.pucmm.edu.do/
+U0242,Universidad de Morón,Argentina,unimoron.edu.ar,http://www.unimoron.edu.ar/
+U0243,Universidad de Pinar del Río,Cuba,upr.edu.cu,http://www.upr.edu.cu/
+U0244,Universidad Americana,Nicaragua,uam.edu.ni,http://www.uam.edu.ni/
+U0245,Universidad Tecnológica de Santiago,Dominican Republic,utesa.edu,http://www.utesa.edu/
+U0246,Universidad Nacional de la Patagonia Austral,Argentina,unpa.edu.ar,http://www.unpa.edu.ar/
+U0247,Instituto Universitario Gendarmería Nacional Argentina,Argentina,iugna.edu.ar,https://iugna.edu.ar/
+U0248,Universidad Pedagógica Nacional,Argentina,unipe.edu.ar,https://unipe.edu.ar/
+U0249,Universidad Tecnológica Indoamérica,Ecuador,indoamerica.edu.ec,http://www.indoamerica.edu.ec/
+U0250,Universidad Maritima de Chile,Chile,umaritima.cl,http://www.umaritima.cl/
+U0251,Universidad del Rosario,Colombia,urosario.edu.co,http://www.urosario.edu.co/
+U0252,Instituto de Enseñanza Superior Oteima,Panama,institutoteima.ac.pa,http://www.institutoteima.ac.pa/
+U0253,Universidad Nacional de San Juan,Argentina,unsj.edu.ar,http://www.unsj.edu.ar/
+U0254,Universidad Bolivariana,Chile,ubolivariana.cl,http://www.ubolivariana.cl/
+U0255,Universidad Autónoma de Santo Domingo,Dominican Republic,uasd.edu.do,http://www.uasd.edu.do/
+U0256,Fundación Universitaria Luis Amigó,Colombia,funlam.edu.co,http://www.funlam.edu.co/
+U0257,Universidad Tecnológica San Antonio de Machala,Ecuador,utsam.edu.ec,http://www.utsam.edu.ec/
+U0258,Universidad Central,Chile,ucentral.cl,http://www.ucentral.cl/
+U0259,Fundacion Escuela Colombiana de Rehabiliación,Colombia,ecr.edu.co,http://www.ecr.edu.co/
+U0260,Universidad Nacional Andrés Bello,Chile,unab.cl,http://www.unab.cl/
+U0261,Universidad Privada Los Andes,Peru,upla.edu.pe,http://www.upla.edu.pe/
+U0262,Universidad Nacional del Chaco Austral,Argentina,uncaus.edu.ar,https://uncaus.edu.ar/
+U0263,Universidad de la Sierra A.C.,Mexico,usac.edu.mx,http://www.usac.edu.mx/
+U0264,"Universidad Técnica ""Federico Santa María""",Chile,utfsm.cl,http://www.utfsm.cl/
+U0265,Centro Universitário Newton Paiva,Brazil,newtonpaiva.br,http://www.newtonpaiva.br/
+U0266,Universidad Nacional Agraria de la Selva,Peru,unas.edu.pe,http://www.unas.edu.pe/
+U0267,Universidad San Pablo,Peru,usp.edu.pe,http://www.usp.edu.pe/
+U0268,Universidad Agraria del Ecuador,Ecuador,uagraria.edu.ec,http://www.uagraria.edu.ec/
+U0269,Universidad Técnica de Cotopaxi,Ecuador,utc.edu.ec,http://www.utc.edu.ec/
+U0270,Universidad de Antioquía,Colombia,udea.edu.co,http://www.udea.edu.co/
+U0271,Universidad Finis Terrae,Chile,ufinis.cl,http://www.ufinis.cl/
+U0272,Universidad Dominicana O&M,Dominican Republic,udoym.edu.do,http://www.udoym.edu.do/
+U0273,Universidade Regional Integrada do Alto Uruguai e das Missões,Brazil,uri.br,http://www.uri.br/
+U0274,Universidad Motolinía del Pedregal,Mexico,motolinia.com.mx,http://www.motolinia.com.mx/
+U0275,Universidad del Azuay,Ecuador,uazuay.edu.ec,http://www.uazuay.edu.ec/
+U0276,Universidade Estadual de Londrina,Brazil,uel.br,http://www.uel.br/
+U0277,Instituto Tecnológico de Buenos Aires,Argentina,itba.edu.ar,http://www.itba.edu.ar/
+U0278,Universidade Federal de São João del-Rei,Brazil,ufsj.edu.br,https://www.ufsj.edu.br/
+U0279,Escuela de Ingeniería de Antioquia,Colombia,eia.edu.co,http://www.eia.edu.co/
+U0280,Universidad de Talca,Chile,utalca.cl,http://www.utalca.cl/
+U0281,Universidad Autónoma Latinoamericana,Colombia,unaula.edu.co,http://www.unaula.edu.co/
+U0282,Universidad de Sonsonate,El Salvador,usonsonate.edu.sv,http://www.usonsonate.edu.sv/
+U0283,Universidad Marcelino Champagnat,Peru,champagnat.edu.pe,http://www.champagnat.edu.pe/
+U0284,Universidad de Valparaiso,Chile,uv.cl,http://www.uv.cl/
+U0285,Universidad Nacional de Avellaneda,Argentina,undav.edu.ar,https://undav.edu.ar/
+U0286,Escuela de Administración de Negocios,Colombia,ean.edu.co,http://www.ean.edu.co/
+U0287,Centro de Estudios Investigación y Tecnología (CEIT),Colombia,iceit.edu.co,http://www.iceit.edu.co/
+U0288,Universidade Regional de Blumenau,Brazil,furb.rct-sc.br,http://www.furb.rct-sc.br/
+U0289,Universidad Fundepos Alma Mater,Costa Rica,fundepos.ac.cr,http://www.fundepos.ac.cr/
+U0290,"Universidad de Artes, Ciencias y Comunicación",Chile,uniacc.cl,http://www.uniacc.cl/
+U0291,Universidad de Buenos Aires,Argentina,uba.ar,http://www.uba.ar/
+U0292,Universidad Nacional de Catamarca,Argentina,unca.edu.ar,http://www.unca.edu.ar/
+U0293,Antonio Nariño University,Colombia,uan.edu.co,https://uan.edu.co/
+U0294,Universidad Nacional del Centro del Perú,Peru,uncp.edu.pe,http://www.uncp.edu.pe/
+U0295,Universidad San Sebastian,Chile,uss.cl,http://www.uss.cl/
+U0296,Universidad del Mar,Mexico,umar.mx,http://www.umar.mx/
+U0297,Universidad Tecmilenio,Mexico,tecmilenio.mx,https://tecmilenio.mx/
+U0298,Universidad Autonoma de Durango,Mexico,uad.edu.mx,http://www.uad.edu.mx/
+U0299,Brookdale Community College,Ecuador,brookdale.edu.ec,http://www.brookdale.edu.ec/
+U0300,Universidad Isaac Newton,El Salvador,usin.edu.sv,http://www.usin.edu.sv/
+U0301,Universidade Estadual de Maringá,Brazil,uem.br,http://www.uem.br/
+U0302,Instituto Tecnológico de Querétaro,Mexico,itq.edu.mx,http://www.itq.edu.mx/
+U0303,Escuela Colombiana de Ingeniería Julio Garavito,Colombia,escuelaing.edu.co,http://www.escuelaing.edu.co/
+U0304,Universidad Autónoma de Nuevo León,Mexico,uanl.mx,http://www.uanl.mx/
+U0305,Universidad Politécnica de El Salvador,El Salvador,upes.edu.sv,http://www.upes.edu.sv/
+U0306,Universidad Ricardo Palma,Peru,urp.edu.pe,http://www.urp.edu.pe/
+U0307,Escuela Politécnica del Ejercito,Ecuador,espe.edu.ec,http://www.espe.edu.ec/
+U0308,CETYS Universidad,Mexico,cetys.mx,http://www.cetys.mx/
+U0309,Universidad Dominico-Americana,Dominican Republic,icda.edu.do,http://www.icda.edu.do/
+U0310,Universidad Nacional de General San Martín,Argentina,unsam.edu.ar,http://www.unsam.edu.ar/
+U0311,Universidad Nacional de La Rioja,Argentina,unlar.edu.ar,http://www.unlar.edu.ar/
+U0312,Universidad Autónoma de Centro América,Costa Rica,uaca.ac.cr,http://www.uaca.ac.cr/
+U0313,Universidad Experimental Felix Adam,Dominican Republic,unefa.edu.do,http://www.unefa.edu.do/
+U0314,Universidad del Noreste,Mexico,une.edu.mx,http://www.une.edu.mx/
+U0315,Universidad Metropolitana Castro Carazo,Costa Rica,umca.net,http://www.umca.net/
+U0316,Corporación Universitaria de la Costa (UNICOSTA),Colombia,cuc.edu.co,http://www.cuc.edu.co/
+U0317,Universidad Estatal a Distancia,Costa Rica,uned.ac.cr,http://www.uned.ac.cr/
+U0318,Universidad Autónoma de Colombia,Colombia,fuac.edu.co,http://www.fuac.edu.co/
+U0319,Universidad de Cartago Florencio del Castillo,Costa Rica,uca.ac.cr,http://www.uca.ac.cr/
+U0320,Universidade do Amazonas,Brazil,fua.br,http://www.fua.br/
+U0321,Universidad Veritas,Costa Rica,uveritas.ac.cr,http://www.uveritas.ac.cr/
+U0322,Universidad de La Sabana,Colombia,unisabana.edu.co,http://www.unisabana.edu.co/
+U0323,Universidad de Ingeniería y Tecnología,Peru,utec.edu.pe,https://utec.edu.pe/
+U0324,Universidad de Especialidades del Espíritu Santo,Ecuador,uees.edu.ec,http://www.uees.edu.ec/
+U0325,Universidad Autonoma del Sur,Chile,uas.cl,http://www.uas.cl/
+U0326,Universidad Tecnológica Nacional,Argentina,utn.edu.ar,http://www.utn.edu.ar/
+U0327,Universidade Católica do Salvador,Brazil,ucsal.br,http://www.ucsal.br/
+U0328,Universidade São Judas Tadeu,Brazil,saojudas.br,http://www.saojudas.br/
+U0329,Universidad Peruana de Ciencias e Informática,Peru,upci.edu.pe,http://www.upci.edu.pe/
+U0330,Pontifícia Universidade Católica de São Paulo,Brazil,pucsp.br,http://www.pucsp.br/
+U0331,Instituto Militar de Engenharia,Brazil,ime.eb.mil.br,http://www.ime.eb.mil.br/
+U0332,Universidad Panamericana de San Salvador,El Salvador,upan.edu.sv,http://www.upan.edu.sv/
+U0333,"Universidad Tecnológica del Choco ""Diego Luis Cordoba""",Colombia,utch.edu.co,http://www.utch.edu.co/
+U0334,Universidad Particular de Chiclayo,Peru,udch.edu.pe,http://www.udch.edu.pe/
+U0335,Universidad Técnica de Machala,Ecuador,utmachala.edu.ec,http://www.utmachala.edu.ec/
+U0336,Pontificia Universidad Católica del Perú,Peru,pucp.edu.pe,http://www.pucp.edu.pe/
+U0337,Universidad de Especialidades Turísticas,Ecuador,uct.edu.ec,http://www.uct.edu.ec/
+U0338,Universidad ICESI,Colombia,icesi.edu.co,http://www.icesi.edu.co/
+U0339,Westhill University,Mexico,westhill.edu.mx,http://www.westhill.edu.mx/
+U0340,Universidad del Turismo,Costa Rica,utur.ac.cr,http://www.utur.ac.cr/
+U0341,Universidad de Ciencias Médicas,Costa Rica,ucimed.com,https://ucimed.com/
+U0342,Universidad Autónoma Metropolitana - Xochimilco,Mexico,cueyatl.uam.mx,http://cueyatl.uam.mx/
+U0343,Universidad Diego Portales,Chile,udp.cl,http://www.udp.cl/
+U0344,Universidad Autónoma del Noreste,Mexico,uane.edu.mx,http://www.uane.edu.mx/
+U0345,Universidad de Viña del Mar,Chile,uvm.cl,http://www.uvm.cl/
+U0346,Universidad APEC,Dominican Republic,unapec.edu.do,http://www.unapec.edu.do/
+U0347,Universidad del Mar,Chile,udelmar.cl,http://www.udelmar.cl/
+U0348,Universidad Piloto de Colombia,Colombia,unipiloto.edu.co,http://www.unipiloto.edu.co/
+U0349,Universidad de Córdoba,Colombia,unicordoba.edu.co,http://www.unicordoba.edu.co/
+U0350,Universidad del Pacifico,Ecuador,upacifico.edu.ec,http://www.upacifico.edu.ec/
+U0351,Universidad Nacional de Cajamarca,Peru,unc.edu.pe,http://www.unc.edu.pe/
+U0352,Universidad El Bosque,Colombia,unbosque.edu.co,http://www.unbosque.edu.co/
+U0353,Universidad Justo Sierra,Mexico,ujsierra.mx,http://www.ujsierra.mx/
+U0354,Universidad Favaloro,Argentina,favaloro.edu.ar,https://favaloro.edu.ar/
+U0355,Universidad Peruana Cayetano Heredia,Peru,upch.edu.pe,http://www.upch.edu.pe/
+U0356,Universidad Nacional de San Agustin,Peru,unsa.edu.pe,http://www.unsa.edu.pe/
+U0357,Universidad Autónoma de Fresnillo,Mexico,uaf.mx,http://www.uaf.mx/
+U0358,"Tecnologico de Baja California, Universidad",Mexico,tecbc.mx,http://www.tecbc.mx/
+U0359,Colegio de Estudios Superiores de Administración (CESA),Colombia,cesa.edu.co,http://www.cesa.edu.co/
+U0360,Escuela Superior Politécnica del Litoral,Ecuador,espol.edu.ec,http://www.espol.edu.ec/
+U0361,Universidad Técnica del Norte,Ecuador,utn.edu.ec,http://www.utn.edu.ec/
+U0362,Universidad Cristóbal Colón,Mexico,ver.ucc.mx,http://www.ver.ucc.mx/
+U0363,Universidad de Belgrano,Argentina,ub.edu.ar,http://www.ub.edu.ar/
+U0364,Escuela Politécnica Nacional,Ecuador,epn.edu.ec,http://www.epn.edu.ec/
+U0365,Universidade do Sagrado Coração,Brazil,usc.br,http://www.usc.br/
+U0366,Universidad Tecnológica América,Ecuador,unita.edu.ec,http://www.unita.edu.ec/
+U0367,Universidad Católica de Cuenca,Ecuador,ucacue.edu.ec,http://www.ucacue.edu.ec/
+U0368,Federal Institute of Education,Brazil,aluno.ifsp.edu.br,https://ifsp.edu.br/
+U0369,Universidad Católica de Córdoba,Argentina,uccor.edu.ar,http://www.uccor.edu.ar/
+U0370,Universidad de las Américas - Puebla,Mexico,udlap.mx,http://www.udlap.mx/
+U0371,Universidad del Pacífico,Chile,upacifico.cl,http://www.upacifico.cl/
+U0372,"Universidad Laica ""Eloy Alfaro"" de Manabi",Ecuador,uleam.edu.ec,http://www.uleam.edu.ec/
+U0373,Universidad Nacional Santiago Antúnez de Mayolo,Peru,unasam.edu.pe,http://www.unasam.edu.pe/
+U0374,Universidad de San Pablo - Tucumán,Argentina,uspt.edu.ar,https://uspt.edu.ar/
+U0375,Universidad Nacional de Moreno,Argentina,unm.edu.ar,https://www.unm.edu.ar/
+U0376,Universidad Nacional de Quilmes,Argentina,unq.edu.ar,http://www.unq.edu.ar/
+U0377,Universidade de Santa Cruz do Sul,Brazil,unisc.br,http://www.unisc.br/
+U0378,Universidad de Guayaquil,Ecuador,ug.edu.ec,http://www.ug.edu.ec/
+U0379,Universidad de Santiago de Chile,Chile,usach.cl,http://www.usach.cl/
+U0380,Universidad Libre de Costa Rica,Costa Rica,ulicori.ac.cr,http://www.ulicori.ac.cr/
+U0381,Universidad Nacional de Educación Enrique Guzmán y Valle,Peru,une.edu.pe,http://www.une.edu.pe/
+U0382,Universidad Femenina del Sagrado Corazón,Peru,unife.edu.pe,http://www.unife.edu.pe/
+U0383,FAE Business School - Faculdade de Administração e Economia,Brazil,fae.edu,http://www.fae.edu/
+U0384,Universidad Monsenor Oscar Arnulfo Romeo,El Salvador,umoar.edu.sv,http://www.umoar.edu.sv/
+U0385,Universidad Interamericana,Dominican Republic,unica.edu.do,http://www.unica.edu.do/
+U0386,Faculdade Impacta - IMPACTA,Brazil,impacta.edu.br,https://www.impacta.edu.br/
+U0387,Universidad Tecnologica Israel,Ecuador,uisrael.ec,http://www.uisrael.ec/
+U0388,Universidad de Ciencias Aplicadas y Ambientales (UDCA),Colombia,udca.edu.co,http://www.udca.edu.co/
+U0389,"Universidad CAECE, Buenos Aires",Argentina,caece.edu.ar,http://www.caece.edu.ar/
+U0390,Universidad Industrial de Santander,Colombia,uis.edu.co,http://www.uis.edu.co/
+U0391,Universidad Politecnica de Nicaragua,Nicaragua,upoli.edu.ni,http://www.upoli.edu.ni/
+U0392,Universidad Peruana de Ciencias Aplicadas,Peru,upc.edu.pe,http://www.upc.edu.pe/
+U0393,Universidad Adventista Dominicana,Dominican Republic,unad.edu.do,http://www.unad.edu.do/
+U0394,Universidad Nacional de Jujuy,Argentina,unju.edu.ar,http://www.unju.edu.ar/
+U0395,Universidad Nacional de Piura,Peru,unp.edu.pe,http://www.unp.edu.pe/
+U0396,Universidad Nacional de las Artes,Argentina,una.edu.ar,http://www.una.edu.ar/
+U0397,Escuela de Arquitectura y Diseño,Chile,arquitecturaucv.cl,http://www.arquitecturaucv.cl/
+U0398,Universidad de Lima,Peru,ulima.edu.pe,http://www.ulima.edu.pe/
+U0399,Universidad Estatal de Bolívar,Ecuador,ueb.isfun.net,http://www.ueb.isfun.net/
+U0400,Universidad del Cine - Buenos Aires,Argentina,ucine.edu.ar,http://www.ucine.edu.ar/
+U0401,"Universidad Laica ""Vicente Rocafuerte"" de Guayaquil",Ecuador,ulaicavr.com,http://www.ulaicavr.com/
+U0402,Universidad de San Andres,Chile,usanandres.cl,http://www.usanandres.cl/
+U0403,University for Peace,Costa Rica,upeace.org,http://www.upeace.org/
+U0404,"Universidad Nacional de La Libertad, Trujillo",Peru,unitru.edu.pe,http://www.unitru.edu.pe/
+U0405,"Universidad Pedagógica Nacional, Unidad León",Mexico,lef.upn.mx,http://www.lef.upn.mx/
+U0406,Universidad de La Amazonia,Colombia,uniamazonia.edu.co,http://www.uniamazonia.edu.co/
+U0407,Instituto Tecnológico de Sonora,Mexico,itson.mx,http://www.itson.mx/
+U0408,Universidad Nacional de Hurlingham,Argentina,unahur.edu.ar,https://unahur.edu.ar/
+U0409,Universidade de Brasília,Brazil,unb.br,http://www.unb.br/
+U0410,Universidad de Chile,Chile,uchile.cl,http://www.uchile.cl/
+U0411,Universidad Nacional del Altiplano,Peru,unap.edu.pe,http://www.unap.edu.pe/
+U0412,Universidad Tecnológica Equinoccial,Ecuador,ute.edu.ec,http://www.ute.edu.ec/
+U0413,Universidad Santa Paula,Costa Rica,uspsantapaula.com,http://www.uspsantapaula.com/
+U0414,Universidad Nueva San Salvador,El Salvador,unssa.edu.sv,http://www.unssa.edu.sv/
+U0415,Universidad de Cuenca,Ecuador,ucuenca.edu.ec,http://www.ucuenca.edu.ec/
+U0416,Universidad Nacional Autónoma de México,Mexico,unam.mx,http://www.unam.mx/
+U0417,Instituto Tecnológico de Occidente del Estado de Hidalgo,Mexico,itsoeh.edu.mx,http://www.itsoeh.edu.mx/
+U0418,Instituto Universitario Italiano de Rosario,Argentina,iunir.edu.ar,https://iunir.edu.ar/
+U0419,Universidad Católica de Occidente,El Salvador,unico.edu.sv,http://www.unico.edu.sv/
+U0420,Universidad Hispanoamericana,Costa Rica,uhispanoamericana.ac.cr,http://www.uhispanoamericana.ac.cr/
+U0421,Universidade de Caxias do Sul,Brazil,ucs.tche.br,http://www.ucs.tche.br/
+U0422,Universidad de Los Llanos,Colombia,unillanos.edu.co,http://www.unillanos.edu.co/
+U0423,Universidad Mayor,Chile,umayor.cl,http://www.umayor.cl/
+U0424,Universidad Técnica Estatal de Quevedo,Ecuador,uteq.edu.ec,http://www.uteq.edu.ec/
+U0425,Universidad Autónoma Metropolitana,Mexico,uam.mx,http://www.uam.mx/
+U0426,Universidade Católica de Petrópolis,Brazil,ucp.br,http://www.ucp.br/
+U0427,Instituto Tecnológico de Las Américas,Dominican Republic,itla.edu.do,https://itla.edu.do/
+U0428,Universidad Anáhuac del Sur,Mexico,uas.mx,http://www.uas.mx/
+U0429,Universidade Federal da Paraíba,Brazil,ufpb.br,http://www.ufpb.br/
+U0430,Universidad de El Salvador,El Salvador,ues.edu.sv,http://www.ues.edu.sv/
+U0431,Universidad Arcis,Chile,universidadarcis.cl,http://www.universidadarcis.cl/
+U0432,Universidad de La Salle,Costa Rica,ulasalle.ac.cr,http://www.ulasalle.ac.cr/
+U0433,Universidad de Aysen,Chile,uaysen.cl,https://www.uaysen.cl/
+U0434,Centro Universitário Plinio Leite,Brazil,unipli.com.br,http://www.unipli.com.br/
+U0435,Instituto Tecnológico Superior de Nuevo Casas Grandes,Mexico,itsncg.edu.mx,http://itsncg.edu.mx/
+U0436,Universidad Privada Juan Mejía Baca,Peru,umb.edu.pe,http://www.umb.edu.pe/
+U0437,Universidade de Santo Amaro,Brazil,unisa.br,http://www.unisa.br/
+U0438,Universidad Casa Grande,Ecuador,casagrande.edu.ec,http://www.casagrande.edu.ec/
+U0439,Universidad de San José,Costa Rica,universidadsanjosecr.com,http://www.universidadsanjosecr.com/
+U0440,Universidad Privada Sergio Bernales,Peru,upsb.edu.pe,http://www.upsb.edu.pe/
+U0441,Universidad Gabriela Mistral,Chile,ugm.cl,http://www.ugm.cl/
+U0442,Universidade Estadual Paulista,Brazil,unesp.br,http://www.unesp.br/
+U0443,Universidad Nacional,Costa Rica,una.ac.cr,http://www.una.ac.cr/
+U0444,Universidad Nacional de San Antonio Abad,Peru,unsaac.edu.pe,http://www.unsaac.edu.pe/
+U0445,Universidad Nacional de Colombia,Colombia,unal.edu.co,http://www.unal.edu.co/
+U0446,Universidad Tecnológica del Sur,Dominican Republic,utesur.edu.do,http://www.utesur.edu.do/
+U0447,Universidad Franco-Mexicana,Mexico,ufram.edu.mx,http://www.ufram.edu.mx/
+U0448,Universidad Nacional Evangélica,Dominican Republic,unev-rd.edu.do,http://www.unev-rd.edu.do/
+U0449,Universidade Veiga de Almeida,Brazil,uva.br,http://www.uva.br/
+U0450,Universidad Peruana Union,Peru,upeu.edu.pe,http://www.upeu.edu.pe/
+U0451,Universidad Autónoma de Occidente,Colombia,cuao.edu.co,http://www.cuao.edu.co/
+U0452,Universidad Modular Abierta,El Salvador,uma.edu.sv,http://www.uma.edu.sv/
+U0453,Universidad Autonoma Monterrey,Costa Rica,unam.ac.cr,http://www.unam.ac.cr/
+U0454,Universidad Católica Santo Toribio de Mogrovejo,Peru,usat.edu.pe,http://www.usat.edu.pe/
+U0455,Universidad La Gran Colombia,Colombia,ugrancolombia.edu.co,http://www.ugrancolombia.edu.co/
+U0456,Tecnologico de Monterrey,Mexico,tec.mx,https://www.tec.mx/
+U0457,Universidad Técnica de Ambato,Ecuador,uta.edu.ec,http://www.uta.edu.ec/
+U0458,Universidade de Taubaté,Brazil,unitau.br,http://www.unitau.br/
+U0459,Universidad Nacional de Lomas de Zamora,Argentina,unlz.edu.ar,http://www.unlz.edu.ar/
+U0460,Universidad Austral de Chile,Chile,uach.cl,http://www.uach.cl/
+U0461,Universidad Nacional Guillermo Brown,Argentina,unab.edu.ar,https://unab.edu.ar/
+U0462,Universidade Federal do Triângulo Mineiro,Brazil,uftm.edu.br,http://www.uftm.edu.br/
+U0463,"Universidad ""Arturo Prat""",Chile,unap.cl,http://www.unap.cl/
+U0464,Universidad de Las Américas,Chile,uamericas.cl,http://www.uamericas.cl/

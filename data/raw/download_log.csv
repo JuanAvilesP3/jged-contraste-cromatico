@@ -1,0 +1,957 @@
+id,url,status,detail
+U0001,http://www.uema.br/,ok,
+U0002,http://www.uch.edu.ar/,ok,
+U0003,http://www.ujcv.edu.hn/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ujcv.edu.hn/"", waiting until ""domcontentloaded""
+"
+U0004,https://www.sancarlos.edu.py/,ok,
+U0005,http://www.utp.ac.pa/,ok,
+U0006,http://www.unan.edu.ni/,ok,
+U0007,http://www.udi.edu/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.udi.edu/
+Call log:
+  - navigating to ""http://www.udi.edu/"", waiting until ""domcontentloaded""
+"
+U0008,http://www.utb.edu.ec/,ok,
+U0009,https://www.undec.edu.ar/,ok,
+U0010,http://www.unicaribe.edu.do/,ok,
+U0011,http://www.uahurtado.cl/,ok,
+U0012,http://www.uap.edu.py/,excluido_robots,
+U0013,http://www.ucentral.edu.ec/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ucentral.edu.ec/
+Call log:
+  - navigating to ""http://www.ucentral.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0014,http://www.udeh.edu.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.udeh.edu.mx/
+Call log:
+  - navigating to ""http://www.udeh.edu.mx/"", waiting until ""domcontentloaded""
+"
+U0015,http://www.uo.edu.cu/,ok,
+U0016,http://www.unis.edu.gt/,ok,
+U0017,http://www.uhispam.edu.ni/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uhispam.edu.ni/
+Call log:
+  - navigating to ""http://www.uhispam.edu.ni/"", waiting until ""domcontentloaded""
+"
+U0018,http://www.iese.edu.ar/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.iese.edu.ar/
+Call log:
+  - navigating to ""http://www.iese.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0019,http://www.ucatolica.ac.cr/,ok,
+U0020,http://www.cunoc.edu.gt/,ok,
+U0021,https://usm.cl/,ok,
+U0022,http://www.uespi.br/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uespi.br/"", waiting until ""domcontentloaded""
+"
+U0023,http://www.ucaazo.edu.ec/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ucaazo.edu.ec/
+Call log:
+  - navigating to ""http://www.ucaazo.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0024,http://www.uern.br/,error,"Page.goto: net::ERR_CERT_DATE_INVALID at http://www.uern.br/
+Call log:
+  - navigating to ""http://www.uern.br/"", waiting until ""domcontentloaded""
+"
+U0025,http://www.up.ac.pa/,ok,
+U0026,http://www.utm.edu.ec/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.utm.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0027,https://uean.edu.ar/,ok,
+U0028,http://www.usam.ac.cr/,error,Page.content: Unable to retrieve content because the page is navigating and changing the content.
+U0029,http://www.zamorano.edu/,ok,
+U0030,http://www.unicah.edu/,ok,
+U0031,http://www.unach.edu.ec/,ok,
+U0032,http://www.uma.edu.py/,ok,
+U0033,https://facens.br/,ok,
+U0034,http://www.eafit.edu.co/,ok,
+U0035,http://www.uerj.br/,ok,
+U0036,http://www.unl.edu.ec/,ok,
+U0037,http://www.ucateci.edu.do/,ok,
+U0038,http://www.unadp.ac.pa/,ok,
+U0039,http://www.utla.edu.sv/,ok,
+U0040,http://www.claeh.edu.uy/,ok,
+U0041,http://www.sjdlc.com/,ok,
+U0042,https://uls.edu.sv/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""https://uls.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0043,http://www.ups.edu.ec/,ok,
+U0044,http://www.claretiano.edu.br/,ok,
+U0045,http://www.viu.edu.pa/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.viu.edu.pa/
+Call log:
+  - navigating to ""http://www.viu.edu.pa/"", waiting until ""domcontentloaded""
+"
+U0046,http://www.unibe.ac.cr/,excluido_robots,
+U0047,http://www.usma.ac.pa/,ok,
+U0048,http://www.udec.cl/,ok,
+U0049,http://www.ucapanama.org/,error,"Page.goto: net::ERR_CERT_AUTHORITY_INVALID at http://www.ucapanama.org/
+Call log:
+  - navigating to ""http://www.ucapanama.org/"", waiting until ""domcontentloaded""
+"
+U0050,http://www.udh.edu.pe/,ok,
+U0051,http://www.une.edu.py/,ok,
+U0052,http://www.unibe.edu.do/,ok,
+U0053,http://www.upaep.mx/,ok,
+U0054,http://www.ucf.edu.cu/,ok,
+U0055,http://www.usb.edu.co/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.usb.edu.co/"", waiting until ""domcontentloaded""
+"
+U0056,http://www.uho.edu.cu/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uho.edu.cu/
+Call log:
+  - navigating to ""http://www.uho.edu.cu/"", waiting until ""domcontentloaded""
+"
+U0057,http://www.uabjo.mx/,ok,
+U0058,http://www.ucem.edu.ni/,ok,
+U0059,http://www.uth.hn/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uth.hn/"", waiting until ""domcontentloaded""
+"
+U0060,http://www.upao.edu.pe/,ok,
+U0061,http://www.usps.edu.hn/,ok,
+U0062,http://www.ucsg.edu.ec/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ucsg.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0063,http://www.uca.edu.ni/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uca.edu.ni/
+Call log:
+  - navigating to ""http://www.uca.edu.ni/"", waiting until ""domcontentloaded""
+"
+U0064,http://www.unjfsc.edu.pe/,ok,
+U0065,http://www.itcr.ac.cr/,ok,
+U0066,http://www.uafam.edu.do/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uafam.edu.do/"", waiting until ""domcontentloaded""
+"
+U0067,http://www.isaacnewtoncr.com/,ok,
+U0068,http://www.usm.edu.ec/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.usm.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0069,http://www.anahuac.mx/,ok,
+U0070,http://www.ucsa.edu.py/,ok,
+U0071,http://www.upnfm.edu.hn/,ok,
+U0072,http://www.uni.edu.ni/,ok,
+U0073,http://www.uia.ac.cr/,ok,
+U0074,http://www.ung.br/,excluido_robots,
+U0075,http://www.upsjb.edu.pe/,ok,
+U0076,http://www.uni.edu.pe/,ok,
+U0077,http://www.uraccan.edu.ni/,ok,
+U0078,http://www.ucp.edu.ar/,ok,
+U0079,http://www.umb.edu.co/,excluido_robots,
+U0080,http://www.universidadpedagogica.com/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.universidadpedagogica.com/
+Call log:
+  - navigating to ""http://www.universidadpedagogica.com/"", waiting until ""domcontentloaded""
+"
+U0081,http://www.cucv.edu.gt/,ok,
+U0082,http://www.sek.edu/,ok,
+U0083,http://www.unadeca.ac.cr/,ok,
+U0084,http://www.utec.edu.sv/,ok,
+U0085,http://www.oteima.ac.pa/,ok,
+U0086,http://www.univa.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.univa.mx/"", waiting until ""domcontentloaded""
+"
+U0087,http://www.unicap.br/,error,"Page.goto: net::ERR_CERT_AUTHORITY_INVALID at http://www.unicap.br/
+Call log:
+  - navigating to ""http://www.unicap.br/"", waiting until ""domcontentloaded""
+"
+U0088,http://www.maimonides.edu.ar/,ok,
+U0089,http://www.upa.cl/,ok,
+U0090,http://www.unirio.br/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.unirio.br/
+Call log:
+  - navigating to ""http://www.unirio.br/"", waiting until ""domcontentloaded""
+"
+U0091,http://www.ubohiggins.cl/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ubohiggins.cl/"", waiting until ""domcontentloaded""
+"
+U0092,http://www.universidad.edu.uy/,ok,
+U0093,http://www.uae.edu.sv/,ok,
+U0094,http://www.uce.edu.do/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uce.edu.do/"", waiting until ""domcontentloaded""
+"
+U0095,http://www.poligto.edu.mx/,ok,
+U0096,http://www.unimetro.edu.co/,ok,
+U0097,http://www.uod.edu.do/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uod.edu.do/
+Call log:
+  - navigating to ""http://www.uod.edu.do/"", waiting until ""domcontentloaded""
+"
+U0098,http://www.cdb.edu.sv/,ok,
+U0099,http://www.uniedpa.com/,ok,
+U0100,http://www.ulacit.ac.cr/,excluido_robots,
+U0101,http://www.uandes.cl/,ok,
+U0102,http://www.uapa.edu.do/,ok,
+U0103,http://www.uwiener.edu.pe/,ok,
+U0104,http://www.ulatina.ac.cr/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ulatina.ac.cr/"", waiting until ""domcontentloaded""
+"
+U0105,http://www.umg.edu.gt/,ok,
+U0106,http://www.uvanet.br/,ok,
+U0107,http://www.utp.edu.pe/,ok,
+U0108,http://www.upt.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.upt.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0109,http://www.uponic.edu.ni/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uponic.edu.ni/
+Call log:
+  - navigating to ""http://www.uponic.edu.ni/"", waiting until ""domcontentloaded""
+"
+U0110,http://www.westcoastuniversity-edu.com/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.westcoastuniversity-edu.com/
+Call log:
+  - navigating to ""http://www.westcoastuniversity-edu.com/"", waiting until ""domcontentloaded""
+"
+U0111,http://www.untref.edu.ar/,ok,
+U0112,https://ucema.edu.ar/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""https://ucema.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0113,http://www.ucr.ac.cr/,ok,
+U0114,http://www.uaconcagua.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uaconcagua.cl/
+Call log:
+  - navigating to ""http://www.uaconcagua.cl/"", waiting until ""domcontentloaded""
+"
+U0115,http://www.unphu.edu.do/,ok,
+U0116,http://www.ugb.edu.sv/,ok,
+U0117,http://www.galileo.edu/,ok,
+U0118,http://www.itmina.edu.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.itmina.edu.mx/
+Call log:
+  - navigating to ""http://www.itmina.edu.mx/"", waiting until ""domcontentloaded""
+"
+U0119,http://www.cujae.edu.cu/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.cujae.edu.cu/
+Call log:
+  - navigating to ""http://www.cujae.edu.cu/"", waiting until ""domcontentloaded""
+"
+U0120,http://www.ismm.edu.cu/,ok,
+U0121,http://www.ulam.edu.ni/,error,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at http://www.ulam.edu.ni/
+Call log:
+  - navigating to ""http://www.ulam.edu.ni/"", waiting until ""domcontentloaded""
+"
+U0122,http://www.universidadlaconcordia.edu.mx/,ok,
+U0123,http://www.ucsd.edu.do/,ok,
+U0124,http://www.uantof.cl/,ok,
+U0125,http://www.urural.edu.gt/,ok,
+U0126,http://www.unicartagena.edu.co/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unicartagena.edu.co/"", waiting until ""domcontentloaded""
+"
+U0127,http://www.castelobranco.br/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.castelobranco.br/"", waiting until ""domcontentloaded""
+"
+U0128,http://www.utelvt.edu.ec/,ok,
+U0129,http://www.unitec.edu/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unitec.edu/"", waiting until ""domcontentloaded""
+"
+U0130,http://www.ufg.edu.sv/,ok,
+U0131,http://www.unp.edu.ar/,ok,
+U0132,http://www.ude.edu.uy/,ok,
+U0133,https://portal.anhembi.br/,ok,
+U0134,http://www.url.edu.gt/,ok,
+U0135,http://www.uda.edu.ar/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uda.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0136,http://www.internacional.edu.ec/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.internacional.edu.ec/
+Call log:
+  - navigating to ""http://www.internacional.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0137,http://www.ujso.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ujso.cl/
+Call log:
+  - navigating to ""http://www.ujso.cl/"", waiting until ""domcontentloaded""
+"
+U0138,http://www.uvg.edu.gt/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uvg.edu.gt/"", waiting until ""domcontentloaded""
+"
+U0139,http://www.ugto.mx/,ok,
+U0140,http://www.usam.edu.sv/,ok,
+U0141,http://www.ucatolica.edu.co/,ok,
+U0142,http://www.ujmd.edu.sv/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ujmd.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0143,http://www.ucad.edu.sv/,ok,
+U0144,http://www.uamericana.edu.py/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uamericana.edu.py/
+Call log:
+  - navigating to ""http://www.uamericana.edu.py/"", waiting until ""domcontentloaded""
+"
+U0145,http://www.unica.edu.ni/,ok,
+U0146,http://www.unem.edu/,error,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at http://www.unem.edu/
+Call log:
+  - navigating to ""http://www.unem.edu/"", waiting until ""domcontentloaded""
+"
+U0147,http://www.up.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.up.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0148,http://www.universidadbrauliocarrillo.com/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.universidadbrauliocarrillo.com/
+Call log:
+  - navigating to ""http://www.universidadbrauliocarrillo.com/"", waiting until ""domcontentloaded""
+"
+U0149,http://www.uta.cl/,ok,
+U0150,http://www.uc.edu.py/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uc.edu.py/
+Call log:
+  - navigating to ""http://www.uc.edu.py/"", waiting until ""domcontentloaded""
+"
+U0151,http://www.ucervantes.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ucervantes.cl/
+Call log:
+  - navigating to ""http://www.ucervantes.cl/"", waiting until ""domcontentloaded""
+"
+U0152,http://www.espoch.edu/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.espoch.edu/
+Call log:
+  - navigating to ""http://www.espoch.edu/"", waiting until ""domcontentloaded""
+"
+U0153,http://www.unisinos.br/,ok,
+U0154,http://www.unicit.edu.ni/,ok,
+U0155,http://www.ucu.edu.uy/,ok,
+U0156,http://www.uclv.edu.cu/,ok,
+U0157,http://www.ucn.cl/,error,"Page.goto: net::ERR_TOO_MANY_REDIRECTS at http://www.ucn.cl/
+Call log:
+  - navigating to ""http://www.ucn.cl/"", waiting until ""domcontentloaded""
+"
+U0158,http://www.unachi.ac.pa/,ok,
+U0159,http://www.uctem.cl/,ok,
+U0160,http://www.uniremhos.edu.do/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uniremhos.edu.do/
+Call log:
+  - navigating to ""http://www.uniremhos.edu.do/"", waiting until ""domcontentloaded""
+"
+U0161,http://www.ucc.edu.ni/,ok,
+U0162,https://ciqa.edu.mx/,ok,
+U0163,http://www.uvipro.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uvipro.cl/
+Call log:
+  - navigating to ""http://www.uvipro.cl/"", waiting until ""domcontentloaded""
+"
+U0164,http://www.upana.edu.gt/,ok,
+U0165,http://www.reduaz.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.reduaz.mx/
+Call log:
+  - navigating to ""http://www.reduaz.mx/"", waiting until ""domcontentloaded""
+"
+U0166,https://uno.edu.ar/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""https://uno.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0167,http://www.ute.edu.do/,ok,
+U0168,https://www.colmayor.edu.co/,ok,
+U0169,http://www.unab.edu.sv/,ok,
+U0170,http://www.unida.edu.py/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unida.edu.py/"", waiting until ""domcontentloaded""
+"
+U0171,http://www.ulacit.ac.pa/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ulacit.ac.pa/
+Call log:
+  - navigating to ""http://www.ulacit.ac.pa/"", waiting until ""domcontentloaded""
+"
+U0172,http://www.uns.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uns.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0173,http://www.ucpr.edu.co/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ucpr.edu.co/
+Call log:
+  - navigating to ""http://www.ucpr.edu.co/"", waiting until ""domcontentloaded""
+"
+U0174,http://www.uv.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uv.mx/"", waiting until ""domcontentloaded""
+"
+U0175,http://www.ispcmw.rimed.cu/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ispcmw.rimed.cu/
+Call log:
+  - navigating to ""http://www.ispcmw.rimed.cu/"", waiting until ""domcontentloaded""
+"
+U0176,http://www.unicit.cl/,ok,
+U0177,http://www.ucsm.edu.pe/,ok,
+U0178,http://www.uapar.edu/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uapar.edu/"", waiting until ""domcontentloaded""
+"
+U0179,http://www.uvg1.net/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uvg1.net/
+Call log:
+  - navigating to ""http://www.uvg1.net/"", waiting until ""domcontentloaded""
+"
+U0180,http://www.utpl.edu.ec/,excluido_robots,
+U0181,http://www.umcc.cu/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.umcc.cu/"", waiting until ""domcontentloaded""
+"
+U0182,http://www.reduc.edu.cu/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.reduc.edu.cu/"", waiting until ""domcontentloaded""
+"
+U0183,http://www.upe.edu.py/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.upe.edu.py/"", waiting until ""domcontentloaded""
+"
+U0184,http://www.ucsur.edu.pe/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ucsur.edu.pe/
+Call log:
+  - navigating to ""http://www.ucsur.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0185,http://www.udg.co.cu/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.udg.co.cu/
+Call log:
+  - navigating to ""http://www.udg.co.cu/"", waiting until ""domcontentloaded""
+"
+U0186,http://www.palermo.edu/,ok,
+U0187,http://www.uns.edu.ar/,ok,
+U0188,http://www.udem.edu.co/,ok,
+U0189,http://www.unmsm.edu.pe/,ok,
+U0190,http://www.unasa.edu.sv/,ok,
+U0191,https://www.insper.edu.br/,excluido_robots,
+U0192,http://www.uileon.edu.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uileon.edu.mx/"", waiting until ""domcontentloaded""
+"
+U0193,http://www.ufidelitas.ac.cr/,ok,
+U0194,http://www.uaa.edu.py/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uaa.edu.py/"", waiting until ""domcontentloaded""
+"
+U0195,http://www.univo.edu.sv/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.univo.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0196,http://www.udelas.ac.pa/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.udelas.ac.pa/"", waiting until ""domcontentloaded""
+"
+U0197,http://www.unica.edu.pe/,ok,
+U0198,http://www.unipamplona.edu.co/,ok,
+U0199,http://www.ces.edu.co/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ces.edu.co/"", waiting until ""domcontentloaded""
+"
+U0200,http://www.ucne.edu.do/,ok,
+U0201,http://www.uco.edu.co/,ok,
+U0202,http://www.uninorte.edu.py/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uninorte.edu.py/"", waiting until ""domcontentloaded""
+"
+U0203,http://www.ceti.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ceti.mx/
+Call log:
+  - navigating to ""http://www.ceti.mx/"", waiting until ""domcontentloaded""
+"
+U0204,http://www.floret.edu.pa/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.floret.edu.pa/
+Call log:
+  - navigating to ""http://www.floret.edu.pa/"", waiting until ""domcontentloaded""
+"
+U0205,http://www.unival.edu.ni/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.unival.edu.ni/
+Call log:
+  - navigating to ""http://www.unival.edu.ni/"", waiting until ""domcontentloaded""
+"
+U0206,http://www.ort.edu.uy/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ort.edu.uy/"", waiting until ""domcontentloaded""
+"
+U0207,http://www.ucom.edu.py/,ok,
+U0208,http://www.uno.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uno.mx/
+Call log:
+  - navigating to ""http://www.uno.mx/"", waiting until ""domcontentloaded""
+"
+U0209,http://www.esap.edu.co/,ok,
+U0210,http://www.ecci.edu.co/,excluido_robots,
+U0211,http://www.uh.cu/,ok,
+U0212,http://www.unp.br/,ok,
+U0213,http://www.uniatlantico.edu.co/,ok,
+U0214,http://www.columbus.edu/,ok,
+U0215,http://www.unimetro.edu.hn/,ok,
+U0216,http://www.uigv.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uigv.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0217,http://www.una.edu.ni/,ok,
+U0218,http://www.ucyt.edu.ni/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ucyt.edu.ni/"", waiting until ""domcontentloaded""
+"
+U0219,http://www.uca.edu.sv/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uca.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0220,http://www.unachile.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.unachile.cl/
+Call log:
+  - navigating to ""http://www.unachile.cl/"", waiting until ""domcontentloaded""
+"
+U0221,http://www.unah.edu.hn/,ok,
+U0222,http://www.unjbg.edu.pe/,ok,
+U0223,http://www.salvador.edu.ar/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.salvador.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0224,http://www.uam.edu.co/,ok,
+U0225,http://www.usac.edu.gt/,ok,
+U0226,http://www.uees.edu.sv/,ok,
+U0227,http://www.ufm.edu.gt/,ok,
+U0228,http://www.ufhec.edu.do/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ufhec.edu.do/
+Call log:
+  - navigating to ""http://www.ufhec.edu.do/"", waiting until ""domcontentloaded""
+"
+U0229,http://www.intec.edu.do/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.intec.edu.do/"", waiting until ""domcontentloaded""
+"
+U0230,http://www.puce.edu.ec/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.puce.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0231,http://www.unica.cu/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unica.cu/"", waiting until ""domcontentloaded""
+"
+U0232,http://www.ulat.ac.pa/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ulat.ac.pa/
+Call log:
+  - navigating to ""http://www.ulat.ac.pa/"", waiting until ""domcontentloaded""
+"
+U0233,http://www.universidadcentral.com/,error,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at http://www.universidadcentral.com/
+Call log:
+  - navigating to ""http://www.universidadcentral.com/"", waiting until ""domcontentloaded""
+"
+U0234,http://www.columbia.edu.py/,ok,
+U0235,http://www.una.py/,ok,
+U0236,http://www.uasb.edu.ec/,ok,
+U0237,http://www.um.edu.uy/,ok,
+U0238,http://www.unimar.br/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unimar.br/"", waiting until ""domcontentloaded""
+"
+U0239,http://www.udem.edu.ni/,ok,
+U0240,http://www.uci.ac.cr/,ok,
+U0241,http://www.pucmm.edu.do/,ok,
+U0242,http://www.unimoron.edu.ar/,ok,
+U0243,http://www.upr.edu.cu/,ok,
+U0244,http://www.uam.edu.ni/,ok,
+U0245,http://www.utesa.edu/,ok,
+U0246,http://www.unpa.edu.ar/,ok,
+U0247,https://iugna.edu.ar/,ok,
+U0248,https://unipe.edu.ar/,ok,
+U0249,http://www.indoamerica.edu.ec/,ok,
+U0250,http://www.umaritima.cl/,excluido_robots,
+U0251,http://www.urosario.edu.co/,ok,
+U0252,http://www.institutoteima.ac.pa/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.institutoteima.ac.pa/
+Call log:
+  - navigating to ""http://www.institutoteima.ac.pa/"", waiting until ""domcontentloaded""
+"
+U0253,http://www.unsj.edu.ar/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unsj.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0254,http://www.ubolivariana.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ubolivariana.cl/
+Call log:
+  - navigating to ""http://www.ubolivariana.cl/"", waiting until ""domcontentloaded""
+"
+U0255,http://www.uasd.edu.do/,ok,
+U0256,http://www.funlam.edu.co/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.funlam.edu.co/"", waiting until ""domcontentloaded""
+"
+U0257,http://www.utsam.edu.ec/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.utsam.edu.ec/
+Call log:
+  - navigating to ""http://www.utsam.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0258,http://www.ucentral.cl/,ok,
+U0259,http://www.ecr.edu.co/,ok,
+U0260,http://www.unab.cl/,ok,
+U0261,http://www.upla.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.upla.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0262,https://uncaus.edu.ar/,ok,
+U0263,http://www.usac.edu.mx/,ok,
+U0264,http://www.utfsm.cl/,ok,
+U0265,http://www.newtonpaiva.br/,ok,
+U0266,http://www.unas.edu.pe/,ok,
+U0267,http://www.usp.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.usp.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0268,http://www.uagraria.edu.ec/,ok,
+U0269,http://www.utc.edu.ec/,ok,
+U0270,http://www.udea.edu.co/,ok,
+U0271,http://www.ufinis.cl/,ok,
+U0272,http://www.udoym.edu.do/,error,"Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+"
+U0273,http://www.uri.br/,ok,
+U0274,http://www.motolinia.com.mx/,ok,
+U0275,http://www.uazuay.edu.ec/,ok,
+U0276,http://www.uel.br/,ok,
+U0277,http://www.itba.edu.ar/,ok,
+U0278,https://www.ufsj.edu.br/,ok,
+U0279,http://www.eia.edu.co/,ok,
+U0280,http://www.utalca.cl/,ok,
+U0281,http://www.unaula.edu.co/,ok,
+U0282,http://www.usonsonate.edu.sv/,ok,
+U0283,http://www.champagnat.edu.pe/,ok,
+U0284,http://www.uv.cl/,ok,
+U0285,https://undav.edu.ar/,ok,
+U0286,http://www.ean.edu.co/,error,"Page.goto: net::ERR_CERT_AUTHORITY_INVALID at http://www.ean.edu.co/
+Call log:
+  - navigating to ""http://www.ean.edu.co/"", waiting until ""domcontentloaded""
+"
+U0287,http://www.iceit.edu.co/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.iceit.edu.co/
+Call log:
+  - navigating to ""http://www.iceit.edu.co/"", waiting until ""domcontentloaded""
+"
+U0288,http://www.furb.rct-sc.br/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.furb.rct-sc.br/
+Call log:
+  - navigating to ""http://www.furb.rct-sc.br/"", waiting until ""domcontentloaded""
+"
+U0289,http://www.fundepos.ac.cr/,ok,
+U0290,http://www.uniacc.cl/,ok,
+U0291,http://www.uba.ar/,ok,
+U0292,http://www.unca.edu.ar/,ok,
+U0293,https://uan.edu.co/,error,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://uan.edu.co/
+Call log:
+  - navigating to ""https://uan.edu.co/"", waiting until ""domcontentloaded""
+"
+U0294,http://www.uncp.edu.pe/,ok,
+U0295,http://www.uss.cl/,ok,
+U0296,http://www.umar.mx/,ok,
+U0297,https://tecmilenio.mx/,ok,
+U0298,http://www.uad.edu.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uad.edu.mx/"", waiting until ""domcontentloaded""
+"
+U0299,http://www.brookdale.edu.ec/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.brookdale.edu.ec/
+Call log:
+  - navigating to ""http://www.brookdale.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0300,http://www.usin.edu.sv/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.usin.edu.sv/
+Call log:
+  - navigating to ""http://www.usin.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0301,http://www.uem.br/,ok,
+U0302,http://www.itq.edu.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.itq.edu.mx/
+Call log:
+  - navigating to ""http://www.itq.edu.mx/"", waiting until ""domcontentloaded""
+"
+U0303,http://www.escuelaing.edu.co/,ok,
+U0304,http://www.uanl.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uanl.mx/"", waiting until ""domcontentloaded""
+"
+U0305,http://www.upes.edu.sv/,ok,
+U0306,http://www.urp.edu.pe/,ok,
+U0307,http://www.espe.edu.ec/,error,"Page.goto: net::ERR_CONNECTION_REFUSED at http://www.espe.edu.ec/
+Call log:
+  - navigating to ""http://www.espe.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0308,http://www.cetys.mx/,ok,
+U0309,http://www.icda.edu.do/,ok,
+U0310,http://www.unsam.edu.ar/,ok,
+U0311,http://www.unlar.edu.ar/,ok,
+U0312,http://www.uaca.ac.cr/,ok,
+U0313,http://www.unefa.edu.do/,ok,
+U0314,http://www.une.edu.mx/,error,"Page.goto: net::ERR_EMPTY_RESPONSE at http://www.une.edu.mx/
+Call log:
+  - navigating to ""http://www.une.edu.mx/"", waiting until ""domcontentloaded""
+"
+U0315,http://www.umca.net/,ok,
+U0316,http://www.cuc.edu.co/,ok,
+U0317,http://www.uned.ac.cr/,ok,
+U0318,http://www.fuac.edu.co/,ok,
+U0319,http://www.uca.ac.cr/,ok,
+U0320,http://www.fua.br/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.fua.br/
+Call log:
+  - navigating to ""http://www.fua.br/"", waiting until ""domcontentloaded""
+"
+U0321,http://www.uveritas.ac.cr/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uveritas.ac.cr/"", waiting until ""domcontentloaded""
+"
+U0322,http://www.unisabana.edu.co/,ok,
+U0323,https://utec.edu.pe/,ok,
+U0324,http://www.uees.edu.ec/,ok,
+U0325,http://www.uas.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uas.cl/
+Call log:
+  - navigating to ""http://www.uas.cl/"", waiting until ""domcontentloaded""
+"
+U0326,http://www.utn.edu.ar/,ok,
+U0327,http://www.ucsal.br/,ok,
+U0328,http://www.saojudas.br/,ok,
+U0329,http://www.upci.edu.pe/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.upci.edu.pe/
+Call log:
+  - navigating to ""http://www.upci.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0330,http://www.pucsp.br/,ok,
+U0331,http://www.ime.eb.mil.br/,ok,
+U0332,http://www.upan.edu.sv/,ok,
+U0333,http://www.utch.edu.co/,ok,
+U0334,http://www.udch.edu.pe/,ok,
+U0335,http://www.utmachala.edu.ec/,ok,
+U0336,http://www.pucp.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.pucp.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0337,http://www.uct.edu.ec/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uct.edu.ec/
+Call log:
+  - navigating to ""http://www.uct.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0338,http://www.icesi.edu.co/,ok,
+U0339,http://www.westhill.edu.mx/,ok,
+U0340,http://www.utur.ac.cr/,ok,
+U0341,https://ucimed.com/,ok,
+U0342,http://cueyatl.uam.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://cueyatl.uam.mx/
+Call log:
+  - navigating to ""http://cueyatl.uam.mx/"", waiting until ""domcontentloaded""
+"
+U0343,http://www.udp.cl/,ok,
+U0344,http://www.uane.edu.mx/,ok,
+U0345,http://www.uvm.cl/,ok,
+U0346,http://www.unapec.edu.do/,ok,
+U0347,http://www.udelmar.cl/,ok,
+U0348,http://www.unipiloto.edu.co/,ok,
+U0349,http://www.unicordoba.edu.co/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unicordoba.edu.co/"", waiting until ""domcontentloaded""
+"
+U0350,http://www.upacifico.edu.ec/,ok,
+U0351,http://www.unc.edu.pe/,error,"Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+"
+U0352,http://www.unbosque.edu.co/,ok,
+U0353,http://www.ujsierra.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ujsierra.mx/"", waiting until ""domcontentloaded""
+"
+U0354,https://favaloro.edu.ar/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""https://favaloro.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0355,http://www.upch.edu.pe/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.upch.edu.pe/
+Call log:
+  - navigating to ""http://www.upch.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0356,http://www.unsa.edu.pe/,ok,
+U0357,http://www.uaf.mx/,ok,
+U0358,http://www.tecbc.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.tecbc.mx/"", waiting until ""domcontentloaded""
+"
+U0359,http://www.cesa.edu.co/,ok,
+U0360,http://www.espol.edu.ec/,ok,
+U0361,http://www.utn.edu.ec/,ok,
+U0362,http://www.ver.ucc.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ver.ucc.mx/
+Call log:
+  - navigating to ""http://www.ver.ucc.mx/"", waiting until ""domcontentloaded""
+"
+U0363,http://www.ub.edu.ar/,ok,
+U0364,http://www.epn.edu.ec/,ok,
+U0365,http://www.usc.br/,excluido_robots,
+U0366,http://www.unita.edu.ec/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.unita.edu.ec/
+Call log:
+  - navigating to ""http://www.unita.edu.ec/"", waiting until ""domcontentloaded""
+"
+U0367,http://www.ucacue.edu.ec/,ok,
+U0368,https://ifsp.edu.br/,excluido_robots,
+U0369,http://www.uccor.edu.ar/,ok,
+U0370,http://www.udlap.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.udlap.mx/"", waiting until ""domcontentloaded""
+"
+U0371,http://www.upacifico.cl/,ok,
+U0372,http://www.uleam.edu.ec/,ok,
+U0373,http://www.unasam.edu.pe/,ok,
+U0374,https://uspt.edu.ar/,ok,
+U0375,https://www.unm.edu.ar/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""https://www.unm.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0376,http://www.unq.edu.ar/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unq.edu.ar/"", waiting until ""domcontentloaded""
+"
+U0377,http://www.unisc.br/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unisc.br/"", waiting until ""domcontentloaded""
+"
+U0378,http://www.ug.edu.ec/,ok,
+U0379,http://www.usach.cl/,ok,
+U0380,http://www.ulicori.ac.cr/,ok,
+U0381,http://www.une.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.une.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0382,http://www.unife.edu.pe/,ok,
+U0383,http://www.fae.edu/,ok,
+U0384,http://www.umoar.edu.sv/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.umoar.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0385,http://www.unica.edu.do/,ok,
+U0386,https://www.impacta.edu.br/,ok,
+U0387,http://www.uisrael.ec/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uisrael.ec/
+Call log:
+  - navigating to ""http://www.uisrael.ec/"", waiting until ""domcontentloaded""
+"
+U0388,http://www.udca.edu.co/,ok,
+U0389,http://www.caece.edu.ar/,ok,
+U0390,http://www.uis.edu.co/,error,"Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x000001A422056480 (otid=0x000001A420DD3530) current active started main>
+	Expected: <greenlet.greenlet object at 0x000001A4"
+U0391,http://www.upoli.edu.ni/,error,"Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x000001A422056480 (otid=0x000001A420DD3530) current active started main>
+	Expected: <greenlet.greenlet object at 0x000001A4"
+U0392,http://www.upc.edu.pe/,error,"Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x000001A422056480 (otid=0x000001A420DD3530) current active started main>
+	Expected: <greenlet.greenlet object at 0x000001A4"
+U0393,http://www.unad.edu.do/,error,"Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x000001A422056480 (otid=0x000001A420DD3530) current active started main>
+	Expected: <greenlet.greenlet object at 0x000001A4"
+U0394,http://www.unju.edu.ar/,error,"Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x000001A422056480 (otid=0x000001A420DD3530) current active started main>
+	Expected: <greenlet.greenlet object at 0x000001A4"
+U0395,http://www.unp.edu.pe/,error,"Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x000001A422056480 (otid=0x000001A420DD3530) current active started main>
+	Expected: <greenlet.greenlet object at 0x000001A4"
+U0396,http://www.una.edu.ar/,error,"Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x000001A422056480 (otid=0x000001A420DD3530) current active started main>
+	Expected: <greenlet.greenlet object at 0x000001A4"
+U0397,http://www.arquitecturaucv.cl/,error,"Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x000001A422056480 (otid=0x000001A420DD3530) current active started main>
+	Expected: <greenlet.greenlet object at 0x000001A4"
+U0398,http://www.ulima.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.ulima.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0399,http://www.ueb.isfun.net/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ueb.isfun.net/
+Call log:
+  - navigating to ""http://www.ueb.isfun.net/"", waiting until ""domcontentloaded""
+"
+U0400,http://www.ucine.edu.ar/,ok,
+U0401,http://www.ulaicavr.com/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ulaicavr.com/
+Call log:
+  - navigating to ""http://www.ulaicavr.com/"", waiting until ""domcontentloaded""
+"
+U0402,http://www.usanandres.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.usanandres.cl/
+Call log:
+  - navigating to ""http://www.usanandres.cl/"", waiting until ""domcontentloaded""
+"
+U0403,http://www.upeace.org/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.upeace.org/"", waiting until ""domcontentloaded""
+"
+U0404,http://www.unitru.edu.pe/,ok,
+U0405,http://www.lef.upn.mx/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.lef.upn.mx/
+Call log:
+  - navigating to ""http://www.lef.upn.mx/"", waiting until ""domcontentloaded""
+"
+U0406,http://www.uniamazonia.edu.co/,error,"Page.goto: net::ERR_CONNECTION_REFUSED at http://www.uniamazonia.edu.co/
+Call log:
+  - navigating to ""http://www.uniamazonia.edu.co/"", waiting until ""domcontentloaded""
+"
+U0407,http://www.itson.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.itson.mx/"", waiting until ""domcontentloaded""
+"
+U0408,https://unahur.edu.ar/,ok,
+U0409,http://www.unb.br/,ok,
+U0410,http://www.uchile.cl/,ok,
+U0411,http://www.unap.edu.pe/,error,"Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at http://www.unap.edu.pe/
+Call log:
+  - navigating to ""http://www.unap.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0412,http://www.ute.edu.ec/,ok,
+U0413,http://www.uspsantapaula.com/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uspsantapaula.com/"", waiting until ""domcontentloaded""
+"
+U0414,http://www.unssa.edu.sv/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unssa.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0415,http://www.ucuenca.edu.ec/,ok,
+U0416,http://www.unam.mx/,ok,
+U0417,http://www.itsoeh.edu.mx/,ok,
+U0418,https://iunir.edu.ar/,ok,
+U0419,http://www.unico.edu.sv/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.unico.edu.sv/
+Call log:
+  - navigating to ""http://www.unico.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0420,http://www.uhispanoamericana.ac.cr/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uhispanoamericana.ac.cr/
+Call log:
+  - navigating to ""http://www.uhispanoamericana.ac.cr/"", waiting until ""domcontentloaded""
+"
+U0421,http://www.ucs.tche.br/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ucs.tche.br/
+Call log:
+  - navigating to ""http://www.ucs.tche.br/"", waiting until ""domcontentloaded""
+"
+U0422,http://www.unillanos.edu.co/,ok,
+U0423,http://www.umayor.cl/,ok,
+U0424,http://www.uteq.edu.ec/,ok,
+U0425,http://www.uam.mx/,excluido_robots,
+U0426,http://www.ucp.br/,ok,
+U0427,https://itla.edu.do/,excluido_robots,
+U0428,http://www.uas.mx/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uas.mx/"", waiting until ""domcontentloaded""
+"
+U0429,http://www.ufpb.br/,ok,
+U0430,http://www.ues.edu.sv/,excluido_robots,
+U0431,http://www.universidadarcis.cl/,ok,
+U0432,http://www.ulasalle.ac.cr/,ok,
+U0433,https://www.uaysen.cl/,ok,
+U0434,http://www.unipli.com.br/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unipli.com.br/"", waiting until ""domcontentloaded""
+"
+U0435,http://itsncg.edu.mx/,ok,
+U0436,http://www.umb.edu.pe/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.umb.edu.pe/"", waiting until ""domcontentloaded""
+"
+U0437,http://www.unisa.br/,ok,
+U0438,http://www.casagrande.edu.ec/,ok,
+U0439,http://www.universidadsanjosecr.com/,ok,
+U0440,http://www.upsb.edu.pe/,ok,
+U0441,http://www.ugm.cl/,ok,
+U0442,http://www.unesp.br/,ok,
+U0443,http://www.una.ac.cr/,ok,
+U0444,http://www.unsaac.edu.pe/,ok,
+U0445,http://www.unal.edu.co/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.unal.edu.co/
+Call log:
+  - navigating to ""http://www.unal.edu.co/"", waiting until ""domcontentloaded""
+"
+U0446,http://www.utesur.edu.do/,ok,
+U0447,http://www.ufram.edu.mx/,ok,
+U0448,http://www.unev-rd.edu.do/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.unev-rd.edu.do/
+Call log:
+  - navigating to ""http://www.unev-rd.edu.do/"", waiting until ""domcontentloaded""
+"
+U0449,http://www.uva.br/,ok,
+U0450,http://www.upeu.edu.pe/,excluido_robots,
+U0451,http://www.cuao.edu.co/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.cuao.edu.co/
+Call log:
+  - navigating to ""http://www.cuao.edu.co/"", waiting until ""domcontentloaded""
+"
+U0452,http://www.uma.edu.sv/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.uma.edu.sv/"", waiting until ""domcontentloaded""
+"
+U0453,http://www.unam.ac.cr/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.unam.ac.cr/
+Call log:
+  - navigating to ""http://www.unam.ac.cr/"", waiting until ""domcontentloaded""
+"
+U0454,http://www.usat.edu.pe/,excluido_robots,
+U0455,http://www.ugrancolombia.edu.co/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.ugrancolombia.edu.co/
+Call log:
+  - navigating to ""http://www.ugrancolombia.edu.co/"", waiting until ""domcontentloaded""
+"
+U0456,https://www.tec.mx/,excluido_robots,
+U0457,http://www.uta.edu.ec/,ok,
+U0458,http://www.unitau.br/,excluido_robots,
+U0459,http://www.unlz.edu.ar/,excluido_robots,
+U0460,http://www.uach.cl/,ok,
+U0461,https://unab.edu.ar/,ok,
+U0462,http://www.uftm.edu.br/,ok,
+U0463,http://www.unap.cl/,error,"Page.goto: Timeout 20000ms exceeded.
+Call log:
+  - navigating to ""http://www.unap.cl/"", waiting until ""domcontentloaded""
+"
+U0464,http://www.uamericas.cl/,error,"Page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.uamericas.cl/
+Call log:
+  - navigating to ""http://www.uamericas.cl/"", waiting until ""domcontentloaded""
+"
