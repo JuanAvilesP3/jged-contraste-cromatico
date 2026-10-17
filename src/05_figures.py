@@ -59,18 +59,28 @@ def fig2_cumplimiento_por_pais(agg):
 
 
 def fig3_dispersion_cielab(fallidos):
+    # Corregido tras revision cruzada (16/10): un punto por color distinto con tamano
+    # proporcional al numero de pares, y leyenda con la descripcion de cada cluster.
     fig, ax = plt.subplots(figsize=(7.5, 6.5))
-    sizes = 8 + (fallidos["L_text"] / fallidos["L_text"].max()) * 60
-    okabe_ito = ["#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2"]
+    # Color de cada marcador acorde con el cluster que representa (Okabe-Ito); formas distintas para B/N.
+    okabe_ito = ["#FFFFFF", "#D55E00", "#0072B2", "#009E73", "#808080", "#C9B400"]
     markers = ["o", "s", "^", "D", "v", "P"]
-    for i in range(6):
-        cluster_mask = fallidos["cluster"] == i
-        ax.scatter(fallidos.loc[cluster_mask, "a_text"], fallidos.loc[cluster_mask, "b_text"], 
-                   s=sizes[cluster_mask], c=okabe_ito[i], marker=markers[i], alpha=0.6, edgecolors="none")
-    ax.axhline(0, color="grey", linewidth=0.5)
-    ax.axvline(0, color="grey", linewidth=0.5)
+    names = {0: "near-white", 1: "red", 2: "blue", 3: "green", 4: "mid-grey", 5: "yellow-green"}
+    total = len(fallidos)
+    order = fallidos["cluster"].value_counts().index
+    for i in order:
+        sub = fallidos[fallidos["cluster"] == i]
+        pts = sub.groupby(["a_text", "b_text"]).size().reset_index(name="n")
+        ax.scatter(pts["a_text"], pts["b_text"], s=6 + 4 * pts["n"] ** 0.5, c=okabe_ito[i], marker=markers[i],
+                   alpha=0.7, edgecolors="black", linewidths=0.5,
+                   label=f"{names[i]} ({100 * len(sub) / total:.1f}%)")
+    ax.axhline(0, color="grey", linewidth=0.5, zorder=0)
+    ax.axvline(0, color="grey", linewidth=0.5, zorder=0)
     ax.set_xlabel(r"$a^*$ (Green $\leftrightarrow$ Red)")
     ax.set_ylabel(r"$b^*$ (Blue $\leftrightarrow$ Yellow)")
+    leg = ax.legend(title="Cluster (share of failing pairs)", loc="lower left", fontsize=8, title_fontsize=8, markerscale=0.6)
+    for h in leg.legend_handles:
+        h.set_sizes([30])
     save_figure(fig, FIG_DIR / "fig3_dispersion_cielab")
     save_figure(fig, PAPER_FIG_DIR / "fig3_dispersion_cielab")
     plt.close(fig)

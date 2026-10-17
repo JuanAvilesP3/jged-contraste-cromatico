@@ -1,0 +1,37 @@
+medida,valor
+cluster0_n,5367
+cluster0_pct_texto_blanco_puro,91.3
+cluster0_ratio_mediano,1.01
+cluster0_L_fondo_mediana,100.0
+cluster1_n,548
+cluster1_pct_texto_blanco_puro,0.0
+cluster1_ratio_mediano,3.47
+cluster1_L_fondo_mediana,100.0
+cluster2_n,492
+cluster2_pct_texto_blanco_puro,0.0
+cluster2_ratio_mediano,2.95
+cluster2_L_fondo_mediana,98.3
+cluster3_n,368
+cluster3_pct_texto_blanco_puro,0.0
+cluster3_ratio_mediano,2.42
+cluster3_L_fondo_mediana,100.0
+cluster4_n,1776
+cluster4_pct_texto_blanco_puro,0.0
+cluster4_ratio_mediano,3.51
+cluster4_L_fondo_mediana,99.2
+cluster5_n,374
+cluster5_pct_texto_blanco_puro,0.0
+cluster5_ratio_mediano,2.27
+cluster5_L_fondo_mediana,100.0
+pct_fallidos_ratio_menor_1.5,42.2
+tasa_analizado_min,Mexico 36%
+tasa_analizado_max,Guatemala 91%
+no_respuesta_chi2,chi2=21.68 df=16 p=0.154 esperada_min=2.65
+pct_sitios_mas_10pct_fallidos,71.0
+pct_sitios_mas_25pct_fallidos,41.7
+pct_pares_con_rgba,7.5
+pct_falla_texto_grande,25.1
+pct_falla_texto_normal,21.0
+r_px_vs_texto_grande,0.66
+gee_solo_font_size_px,beta=+0.0085 p=0.035
+gee_solo_es_texto_grande,beta=+0.1042 p=0.391

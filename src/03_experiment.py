@@ -77,10 +77,12 @@ def main():
     # --- Validacion cruzada con axe-core ---
     valid = agg.dropna(subset=["axe_color_contrast_violations"])
     if len(valid) > 5:
-        corr = valid["pct_falla_aa"].corr(valid["axe_color_contrast_violations"] /
-                                            (valid["axe_color_contrast_violations"] + valid["axe_color_contrast_passes"]) * 100)
+        tasa_axe = valid["axe_color_contrast_violations"] / (valid["axe_color_contrast_violations"] + valid["axe_color_contrast_passes"]) * 100
+        corr = valid["pct_falla_aa"].corr(tasa_axe)
+        # Corregido tras revision cruzada (16/10): n = sitios con ambas tasas definidas (antes contaba 259).
+        n_validos = int((valid["pct_falla_aa"].notna() & tasa_axe.notna()).sum())
         print(f"\nCorrelación entre % fallas propio y % violaciones axe-core: {corr:.3f}")
-        pd.DataFrame([{"r_pearson_pct_falla_vs_pct_violaciones_axe": corr, "n_sitios": int(valid["pct_falla_aa"].notna().sum())}]
+        pd.DataFrame([{"r_pearson_pct_falla_vs_pct_violaciones_axe": corr, "n_sitios": n_validos}]
                      ).to_csv(RESULTS_DIR / "correlacion_axe.csv", index=False)
 
     print(f"\nCompletado: {RESULTS_DIR}")
